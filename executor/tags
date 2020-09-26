@@ -1,0 +1,98 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/3fdf28bc/
+*.tcc	.vscode/settings.json	/^    "*.tcc": "cpp",$/;"	s	object:files.associations
+EventCallback	executor.hpp	/^typedef std::function<std::string(std::string)> EventCallback;$/;"	t
+ProcessDaemon	executor.hpp	/^    ProcessDaemon(std::string_view path) : m_path(std::move(path)) {}$/;"	f	class:ProcessExecutor::ProcessDaemon
+ProcessDaemon	executor.hpp	/^  class ProcessDaemon {$/;"	c	class:ProcessExecutor
+ProcessExecutor	executor.hpp	/^  ProcessExecutor() {}$/;"	f	class:ProcessExecutor
+ProcessExecutor	executor.hpp	/^class ProcessExecutor : public ProcessManager {$/;"	c
+ProcessManager	executor.hpp	/^class ProcessManager {$/;"	c
+__anon3b5b11db0102	main.cpp	/^std::function<std::string(std::string)> callback_fn([](std::string value) {$/;"	f	file:
+__anon836e1fd00110	execxx.hpp	/^namespace {$/;"	n
+algorithm	.vscode/settings.json	/^    "algorithm": "cpp",$/;"	s	object:files.associations
+array	.vscode/settings.json	/^    "array": "cpp",$/;"	s	object:files.associations
+atomic	.vscode/settings.json	/^    "atomic": "cpp",$/;"	s	object:files.associations
+bit	.vscode/settings.json	/^    "bit": "cpp",$/;"	s	object:files.associations
+bitset	.vscode/settings.json	/^    "bitset": "cpp",$/;"	s	object:files.associations
+callback_fn	main.cpp	/^std::function<std::string(std::string)> callback_fn([](std::string value) {$/;"	v	typeref:typename:std::function<std::string (std::string)>
+cctype	.vscode/settings.json	/^    "cctype": "cpp",$/;"	s	object:files.associations
+chrono	.vscode/settings.json	/^    "chrono": "cpp",$/;"	s	object:files.associations
+cinttypes	.vscode/settings.json	/^    "cinttypes": "cpp",$/;"	s	object:files.associations
+clocale	.vscode/settings.json	/^    "clocale": "cpp",$/;"	s	object:files.associations
+cmath	.vscode/settings.json	/^    "cmath": "cpp",$/;"	s	object:files.associations
+codecvt	.vscode/settings.json	/^    "codecvt": "cpp",$/;"	s	object:files.associations
+complex	.vscode/settings.json	/^    "complex": "cpp",$/;"	s	object:files.associations
+condition_variable	.vscode/settings.json	/^    "condition_variable": "cpp",$/;"	s	object:files.associations
+csignal	.vscode/settings.json	/^    "csignal": "cpp",$/;"	s	object:files.associations
+cstdarg	.vscode/settings.json	/^    "cstdarg": "cpp",$/;"	s	object:files.associations
+cstddef	.vscode/settings.json	/^    "cstddef": "cpp",$/;"	s	object:files.associations
+cstdint	.vscode/settings.json	/^    "cstdint": "cpp",$/;"	s	object:files.associations
+cstdio	.vscode/settings.json	/^    "cstdio": "cpp",$/;"	s	object:files.associations
+cstdlib	.vscode/settings.json	/^    "cstdlib": "cpp",$/;"	s	object:files.associations
+cstring	.vscode/settings.json	/^    "cstring": "cpp",$/;"	s	object:files.associations
+ctime	.vscode/settings.json	/^    "ctime": "cpp",$/;"	s	object:files.associations
+cwchar	.vscode/settings.json	/^    "cwchar": "cpp",$/;"	s	object:files.associations
+cwctype	.vscode/settings.json	/^    "cwctype": "cpp",$/;"	s	object:files.associations
+deque	.vscode/settings.json	/^    "deque": "cpp",$/;"	s	object:files.associations
+exception	.vscode/settings.json	/^    "exception": "cpp",$/;"	s	object:files.associations
+files.associations	.vscode/settings.json	/^  "files.associations": {$/;"	o
+foo	main.cpp	/^void foo(std::string value) {$/;"	f	typeref:typename:void
+fstream	.vscode/settings.json	/^    "fstream": "cpp",$/;"	s	object:files.associations
+functional	.vscode/settings.json	/^    "functional": "cpp",$/;"	s	object:files.associations
+future	.vscode/settings.json	/^    "future": "cpp",$/;"	s	object:files.associations
+initializer_list	.vscode/settings.json	/^    "initializer_list": "cpp",$/;"	s	object:files.associations
+iomanip	.vscode/settings.json	/^    "iomanip": "cpp",$/;"	s	object:files.associations
+iosfwd	.vscode/settings.json	/^    "iosfwd": "cpp",$/;"	s	object:files.associations
+iostream	.vscode/settings.json	/^    "iostream": "cpp",$/;"	s	object:files.associations
+istream	.vscode/settings.json	/^    "istream": "cpp",$/;"	s	object:files.associations
+iterator	.vscode/settings.json	/^    "iterator": "cpp",$/;"	s	object:files.associations
+limits	.vscode/settings.json	/^    "limits": "cpp",$/;"	s	object:files.associations
+list	.vscode/settings.json	/^    "list": "cpp",$/;"	s	object:files.associations
+m_callback	executor.hpp	/^  EventCallback m_callback;$/;"	m	class:ProcessExecutor	typeref:typename:EventCallback
+m_config	executor.hpp	/^  void* m_config;$/;"	m	class:ProcessExecutor	typeref:typename:void *
+m_path	executor.hpp	/^    std::string_view m_path;$/;"	m	class:ProcessExecutor::ProcessDaemon	typeref:typename:std::string_view
+main	main.cpp	/^int main(int argc, char** argv) {$/;"	f	typeref:typename:int
+map	.vscode/settings.json	/^    "map": "cpp",$/;"	s	object:files.associations
+memory	.vscode/settings.json	/^    "memory": "cpp",$/;"	s	object:files.associations
+memory_resource	.vscode/settings.json	/^    "memory_resource": "cpp",$/;"	s	object:files.associations
+mutex	.vscode/settings.json	/^    "mutex": "cpp",$/;"	s	object:files.associations
+netfwd	.vscode/settings.json	/^    "netfwd": "cpp",$/;"	s	object:files.associations
+new	.vscode/settings.json	/^    "new": "cpp",$/;"	s	object:files.associations
+notifyProcessEvent	executor.hpp	/^  virtual void notifyProcessEvent(std::string status) override {$/;"	f	class:ProcessExecutor	typeref:typename:void
+numeric	.vscode/settings.json	/^    "numeric": "cpp",$/;"	s	object:files.associations
+optional	.vscode/settings.json	/^    "optional": "cpp",$/;"	s	object:files.associations
+ostream	.vscode/settings.json	/^    "ostream": "cpp",$/;"	s	object:files.associations
+qx	execxx.hpp	/^std::string qx(const std::vector<std::string>& args,$/;"	f	namespace:__anon836e1fd00110	typeref:typename:std::string
+random	.vscode/settings.json	/^    "random": "cpp",$/;"	s	object:files.associations
+ratio	.vscode/settings.json	/^    "ratio": "cpp",$/;"	s	object:files.associations
+regex	.vscode/settings.json	/^    "regex": "cpp",$/;"	s	object:files.associations
+request	executor.hpp	/^  virtual void request(std::string_view path) override {$/;"	f	class:ProcessExecutor	typeref:typename:void
+run	executor.hpp	/^    std::string run() {$/;"	f	class:ProcessExecutor::ProcessDaemon	typeref:typename:std::string
+run_	executor.hpp	/^    std::string run_() {$/;"	f	class:ProcessExecutor::ProcessDaemon	typeref:typename:std::string
+set	.vscode/settings.json	/^    "set": "cpp",$/;"	s	object:files.associations
+setEventCallback	executor.hpp	/^  virtual void setEventCallback(EventCallback f) override { m_callback = f; }$/;"	f	class:ProcessExecutor	typeref:typename:void
+shared_mutex	.vscode/settings.json	/^    "shared_mutex": "cpp",$/;"	s	object:files.associations
+sstream	.vscode/settings.json	/^    "sstream": "cpp",$/;"	s	object:files.associations
+stdexcept	.vscode/settings.json	/^    "stdexcept": "cpp",$/;"	s	object:files.associations
+streambuf	.vscode/settings.json	/^    "streambuf": "cpp",$/;"	s	object:files.associations
+string	.vscode/settings.json	/^    "string": "cpp",$/;"	s	object:files.associations
+string_view	.vscode/settings.json	/^    "string_view": "cpp",$/;"	s	object:files.associations
+system_error	.vscode/settings.json	/^    "system_error": "cpp",$/;"	s	object:files.associations
+thread	.vscode/settings.json	/^    "thread": "cpp",$/;"	s	object:files.associations
+tuple	.vscode/settings.json	/^    "tuple": "cpp",$/;"	s	object:files.associations
+type_traits	.vscode/settings.json	/^    "type_traits": "cpp",$/;"	s	object:files.associations
+typeindex	.vscode/settings.json	/^    "typeindex": "cpp",$/;"	s	object:files.associations
+typeinfo	.vscode/settings.json	/^    "typeinfo": "cpp",$/;"	s	object:files.associations
+unordered_map	.vscode/settings.json	/^    "unordered_map": "cpp",$/;"	s	object:files.associations
+unordered_set	.vscode/settings.json	/^    "unordered_set": "cpp",$/;"	s	object:files.associations
+utility	.vscode/settings.json	/^    "utility": "cpp",$/;"	s	object:files.associations
+valarray	.vscode/settings.json	/^    "valarray": "cpp",$/;"	s	object:files.associations
+variant	.vscode/settings.json	/^    "variant": "cpp"$/;"	s	object:files.associations
+vector	.vscode/settings.json	/^    "vector": "cpp",$/;"	s	object:files.associations
+~ProcessDaemon	executor.hpp	/^    ~ProcessDaemon(){\/* Clean up *\/};$/;"	f	class:ProcessExecutor::ProcessDaemon
+~ProcessExecutor	executor.hpp	/^  ~ProcessExecutor() { \/* Kill processes? Log for processes? *\/$/;"	f	class:ProcessExecutor

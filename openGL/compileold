@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+g++ -std=c++17 -g -I include -pthread -lglfw -lGLU -lGL src/app.cpp -o glapp

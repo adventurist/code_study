@@ -1,0 +1,104 @@
+syntax = "proto3";
+
+// Note: Please note that depending on languages, the names of fields might be modified after they have been
+// converted to that language. For example in JavaScript, most libraries will convert the fields
+// from snake_case to camelCase.
+
+package distant;
+
+// ==== Session Messages ====
+// Sessions correspond to a single browser session being controlled remotely.
+
+/**
+ * Start a session with the corresponding id and target_url.
+ *
+ * Once started, the session will attempt to open the target_url in order to load the remote
+ * application. The controller may support the distant file access protocol, and in such circumstances
+ * a URL using the `distant` scheme will attempt to load the file from the
+ *
+ * The id can be used by controllers to track sessions or simply for debugging purposes.
+ *
+ * A SessionStart will trigger one or more corresponding SessionEvents to inform of the
+ * current status of the session.
+ */
+message SessionStart {
+  int32 id = 1;         // Id for a session
+  string target_url = 2; // The entry point of a session, this points to a URL.
+}
+
+/**
+ * Stop a session.
+ *
+ * Once the session is stopped, the controller will receive on last update that the session
+ * has been stopped.
+ */
+ message SessionStop {
+  int32 id = 1;
+}
+
+/**
+ * Attempts to update a session. Passing a empty target_url will simply reload an existing session.
+ *
+ * A SessionUpdate will trigger one or more corresponding SessionEvents to inform   of the
+ * current status of the session.
+ */
+message SessionUpdate {
+  int32 id = 1;         // Id of the session.
+  string target_url = 2; // The entry point of a session, this points to a URL.
+}
+
+/**
+ * The different statuses that a session can be in.
+ */
+enum SessionStatus {
+  UNKNOWN = 0; // Nothing is known about this session, or it doesn't exist.
+  READY = 1;   // The session has been established and is ready to receive additional messages.
+  ERROR = 2;    // The session has ended because of an error.
+  CLOSED = 3;  // The session was ended successfully without error.
+}
+
+/**
+ * State information of a session
+ */
+message SessionInfo {
+  int32 id = 1;                     // Id of the session
+  string target_url = 2;             // Entry point url of a session
+  distant.SessionStatus status = 3; // The current status of the session
+  string error = 4;                 // More information in the case of a session error
+  int32 target_status_code = 5;		    // Status code from load of remote application. Empty when no load
+				    // attempt has yet taken place
+}
+
+/**
+ * An event that informs the controller of a state change in the session. This can be
+ * sent in response to a command or unsolicited.
+ */
+message SessionEvent {
+  int32 id = 1;                           // Id of the session.
+  distant.SessionInfo prev_state = 2;     // The previous session state.
+  distant.SessionInfo current_state = 3;  // The current session state.
+}
+
+/**
+ * Send a custom message to the session or from the session. This allows applications
+ * to overlay other protocols on top of the distant protocol.
+ */
+message SessionMessage {
+  int32 id = 1;           // Id of the session.
+  bytes payload = 2;      // The opaque payload of the message.
+}
+
+//==== Top Level Aggregate Messages ====
+
+/**
+ * Union of all the operations that can be performed on a remote from a controller.
+ */
+message Operation {
+  oneof payload {
+    distant.SessionStart start = 1;
+    distant.SessionStop stop = 2;
+    distant.SessionUpdate update = 3;
+    distant.SessionMessage custom_message = 4;
+    distant.SessionEvent event = 5;
+  };
+}
