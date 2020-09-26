@@ -1,0 +1,164 @@
+[Imported Modules]
+   [This]
+      [Public]
+      [Imported Classes]
+         ecere::com::Module
+            [Instantiated]
+        .
+   ecere
+      [Private]
+      [Imported Classes]
+         ecere::gfx3D::meshes::Sphere
+            [Instantiated]
+            [Imported Methods]
+               Create
+               .
+            [Imported Properties]
+               numLat
+                  [Set]
+               numLon
+                  [Set]
+               .
+         ecere::gfx3D::Object
+            [Instantiated]
+            [Imported Methods]
+               Duplicate
+               AddName
+               UpdateTransform
+               .
+            [Imported Properties]
+               transform
+                  [Set]
+                  [Get]
+               material
+                  [Set]
+                  [Get]
+               mesh
+                  [Set]
+                  [Get]
+               light
+                  [Set]
+                  [Get]
+               flags
+                  [Set]
+                  [Get]
+               .
+         ecere::gfx3D::Material
+            [Instantiated]
+         ecere::gfx3D::Camera
+            [Instantiated]
+            [Imported Methods]
+               Setup
+               Update
+               .
+            [Imported Properties]
+               type
+                  [Set]
+                  [Get]
+               position
+                  [Set]
+                  [Get]
+               orientation
+                  [Set]
+                  [Get]
+               fov
+                  [Set]
+                  [Get]
+               .
+         ecere::gui::GuiApplication
+            [Imported Properties]
+               driver
+                  [Set]
+                  [Get]
+               timerResolution
+                  [Set]
+               .
+         ecere::gfx::DisplaySystem
+            [Imported Methods]
+               AddMaterial
+               .
+         ecere::gfx3D::Mesh
+            [Imported Methods]
+               ApplyTranslucency
+               .
+         ecere::gui::Window
+            [Imported Methods]
+               Update
+               GetMousePosition
+               Capture
+               ReleaseCapture
+               Move
+               Destroy
+               .
+            [Imported Properties]
+               text
+                  [Set]
+                  [Get]
+               borderStyle
+                  [Set]
+                  [Get]
+               moveable
+                  [Set]
+                  [Get]
+               stayOnTop
+                  [Set]
+                  [Get]
+               clientSize
+                  [Set]
+                  [Get]
+               background
+                  [Set]
+                  [Get]
+               opacity
+                  [Set]
+                  [Get]
+               alphaBlend
+                  [Set]
+                  [Get]
+               displaySystem
+                  [Get]
+               display
+                  [Get]
+               size
+                  [Set]
+                  [Get]
+               position
+                  [Set]
+                  [Get]
+               .
+         ecere::gfx3D::Euler
+            [Imported Properties]
+               ecere::gfx3D::Quaternion
+                  [Set]
+                  [Get]
+               .
+         ecere::gfx3D::Quaternion
+            [Imported Methods]
+               Multiply
+               Normalize
+               .
+         ecere::gfx::Surface
+            [Imported Methods]
+               Clear
+               .
+         ecere::gfx::Display
+            [Imported Methods]
+               SetCamera
+               SetLight
+               DrawObject
+               .
+            [Imported Properties]
+               fogDensity
+                  [Set]
+               .
+         ecere::sys::Degrees
+            [Imported Properties]
+               ecere::sys::Radians
+                  [Set]
+                  [Get]
+               .
+        .
+      [Imported Functions]
+         ecere::sys::GetTime
+        .
+   .

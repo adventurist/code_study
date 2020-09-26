@@ -1,0 +1,390 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/3fdf28bc/
+$(VERBOSE).SILENT	Makefile	/^$(VERBOSE).SILENT:$/;"	t
+ARCHITECTURE_ID	CMakeFiles/3.15.5/CompilerIdC/CMakeCCompilerId.c	/^#   define ARCHITECTURE_ID /;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.15.5/CompilerIdC/CMakeCCompilerId.c	/^#  define ARCHITECTURE_ID /;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.15.5/CompilerIdC/CMakeCCompilerId.c	/^#  define ARCHITECTURE_ID$/;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define ARCHITECTURE_ID /;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define ARCHITECTURE_ID /;"	d	file:
+ARCHITECTURE_ID	CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define ARCHITECTURE_ID$/;"	d	file:
+AsioInputStream	include/AsioAdapting.h	/^AsioInputStream<SyncReadStream>::AsioInputStream(SyncReadStream& sock) :$/;"	f	class:AsioInputStream
+AsioInputStream	include/AsioAdapting.h	/^class AsioInputStream : public CopyingInputStream {$/;"	c
+AsioOutputStream	include/AsioAdapting.h	/^AsioOutputStream<SyncWriteStream>::AsioOutputStream(SyncWriteStream& sock) :$/;"	f	class:AsioOutputStream
+AsioOutputStream	include/AsioAdapting.h	/^class AsioOutputStream : public CopyingOutputStream {$/;"	c
+Boost_USE_DEBUG_LIBS	CMakeLists.txt	/^set(Boost_USE_DEBUG_LIBS         ON) # ignore debug libs and$/;"	v
+Boost_USE_MULTITHREADED	CMakeLists.txt	/^set(Boost_USE_MULTITHREADED      ON)$/;"	v
+Boost_USE_RELEASE_LIBS	CMakeLists.txt	/^set(Boost_USE_RELEASE_LIBS       ON)  # only find release libs$/;"	v
+Boost_USE_STATIC_LIBS	CMakeLists.txt	/^set(Boost_USE_STATIC_LIBS        ON)  # only find static libs$/;"	v
+Boost_USE_STATIC_RUNTIME	CMakeLists.txt	/^set(Boost_USE_STATIC_RUNTIME    OFF)$/;"	v
+ByteSizeLong	proto/include/TrxMessage.pb.cc	/^size_t Message::ByteSizeLong() const {$/;"	f	class:Trx::Message	typeref:typename:size_t
+CHK_	proto/include/TrxMessage.pb.cc	/^#define CHK_(/;"	d	file:
+CMAKE_AR	CMakeFiles/3.15.5/CMakeCCompiler.cmake	/^set(CMAKE_AR "\/usr\/bin\/ar")$/;"	v
+CMAKE_AR	CMakeFiles/3.15.5/CMakeCXXCompiler.cmake	/^set(CMAKE_AR "\/usr\/bin\/ar")$/;"	v
+CMAKE_BINARY_DIR	Makefile	/^CMAKE_BINARY_DIR = \/data\/c\/protoboost$/;"	m
+CMAKE_C11_COMPILE_FEATURES	CMakeFiles/3.15.5/CMakeCCompiler.cmake	/^set(CMAKE_C11_COMPILE_FEATURES "c_std_11;c_static_assert")$/;"	v
+CMAKE_C90_COMPILE_FEATURES	CMakeFiles/3.15.5/CMakeCCompiler.cmake	/^set(CMAKE_C90_COMPILE_FEATURES "c_std_90;c_function_prototypes")$/;"	v
+CMAKE_C99_COMPILE_FEATURES	CMakeFiles/3.15.5/CMakeCCompiler.cmake	/^set(CMAKE_C99_COMPILE_FEATURES "c_std_99;c_restrict;c_variadic_macros")$/;"	v
+CMAKE_CL_SHOWINCLUDES_PREFIX	CMakeFiles/3.15.5/CMakeCCompiler.cmake	/^  set(CMAKE_CL_SHOWINCLUDES_PREFIX "${CMAKE_C_CL_SHOWINCLUDES_PREFIX}")$/;"	v
+CMAKE_CL_SHOWINCLUDES_PREFIX	CMakeFiles/3.15.5/CMakeCXXCompiler.cmake	/^  set(CMAKE_CL_SHOWINCLUDES_PREFIX "${CMAKE_CXX_CL_SHOWINCLUDES_PREFIX}")$/;"	v
+CMAKE_COMMAND	Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
+CMAKE_COMPILER_IS_CYGWIN	CMakeFiles/3.15.5/CMakeCCompiler.cmake	/^set(CMAKE_COMPILER_IS_CYGWIN )$/;"	v
+CMAKE_COMPILER_IS_CYGWIN	CMakeFiles/3.15.5/CMakeCXXCompiler.cmake	/^set(CMAKE_COMPILER_IS_CYGWIN )$/;"	v
+CMAKE_COMPILER_IS_GNUCC	CMakeFiles/3.15.5/CMakeCCompiler.cmake	/^set(CMAKE_COMPILER_IS_GNUCC 1)$/;"	v
+CMAKE_COMPILER_IS_GNUCXX	CMakeFiles/3.15.5/CMakeCXXCompiler.cmake	/^set(CMAKE_COMPILER_IS_GNUCXX 1)$/;"	v
+CMAKE_COMPILER_IS_MINGW	CMakeFiles/3.15.5/CMakeCCompiler.cmake	/^set(CMAKE_COMPILER_IS_MINGW )$/;"	v
+CMAKE_COMPILER_IS_MINGW	CMakeFiles/3.15.5/CMakeCXXCompiler.cmake	/^set(CMAKE_COMPILER_IS_MINGW )$/;"	v
+CMAKE_CROSSCOMPILING	CMakeFiles/3.15.5/CMakeSystem.cmake	/^set(CMAKE_CROSSCOMPILING "FALSE")$/;"	v
+CMAKE_CROSSCOMPILING	cmake_install.cmake	/^  set(CMAKE_CROSSCOMPILING "FALSE")$/;"	v
+CMAKE_CXX11_COMPILE_FEATURES	CMakeFiles/3.15.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX11_COMPILE_FEATURES "cxx_std_11;cxx_alias_templates;cxx_alignas;cxx_alignof;cxx_att/;"	v
+CMAKE_CXX14_COMPILE_FEATURES	CMakeFiles/3.15.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX14_COMPILE_FEATURES "cxx_std_14;cxx_aggregate_default_initializers;cxx_attribute_de/;"	v
+CMAKE_CXX17_COMPILE_FEATURES	CMakeFiles/3.15.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX17_COMPILE_FEATURES "cxx_std_17")$/;"	v
+CMAKE_CXX20_COMPILE_FEATURES	CMakeFiles/3.15.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX20_COMPILE_FEATURES "cxx_std_20")$/;"	v
+CMAKE_CXX98_COMPILE_FEATURES	CMakeFiles/3.15.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX98_COMPILE_FEATURES "cxx_std_98;cxx_template_template_parameters")$/;"	v
+CMAKE_CXX_ABI_COMPILED	CMakeFiles/3.15.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_ABI_COMPILED TRUE)$/;"	v
+CMAKE_CXX_CL_SHOWINCLUDES_PREFIX	CMakeFiles/3.15.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_CL_SHOWINCLUDES_PREFIX "")$/;"	v
+CMAKE_CXX_COMPILER	CMakeFiles/3.15.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER "\/usr\/bin\/c++")$/;"	v
+CMAKE_CXX_COMPILER_ABI	CMakeFiles/3.15.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_ABI "ELF")$/;"	v
+CMAKE_CXX_COMPILER_AR	CMakeFiles/3.15.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_AR "\/usr\/bin\/gcc-ar")$/;"	v
+CMAKE_CXX_COMPILER_ARG1	CMakeFiles/3.15.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_ARG1 "")$/;"	v
+CMAKE_CXX_COMPILER_ENV_VAR	CMakeFiles/3.15.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_ENV_VAR "CXX")$/;"	v
+CMAKE_CXX_COMPILER_FRONTEND_VARIANT	CMakeFiles/3.15.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_FRONTEND_VARIANT "")$/;"	v
+CMAKE_CXX_COMPILER_ID	CMakeFiles/3.15.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_ID "GNU")$/;"	v
+CMAKE_CXX_COMPILER_ID	CMakeFiles/protoboost.dir/DependInfo.cmake	/^set(CMAKE_CXX_COMPILER_ID "GNU")$/;"	v
+CMAKE_CXX_COMPILER_ID_RUN	CMakeFiles/3.15.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_ID_RUN 1)$/;"	v
+CMAKE_CXX_COMPILER_LOADED	CMakeFiles/3.15.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_LOADED 1)$/;"	v
+CMAKE_CXX_COMPILER_RANLIB	CMakeFiles/3.15.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_RANLIB "\/usr\/bin\/gcc-ranlib")$/;"	v
+CMAKE_CXX_COMPILER_VERSION	CMakeFiles/3.15.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_VERSION "9.2.0")$/;"	v
+CMAKE_CXX_COMPILER_VERSION_INTERNAL	CMakeFiles/3.15.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_VERSION_INTERNAL "")$/;"	v
+CMAKE_CXX_COMPILER_WORKS	CMakeFiles/3.15.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_WORKS TRUE)$/;"	v
+CMAKE_CXX_COMPILER_WRAPPER	CMakeFiles/3.15.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_WRAPPER "")$/;"	v
+CMAKE_CXX_COMPILE_FEATURES	CMakeFiles/3.15.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILE_FEATURES "cxx_std_98;cxx_template_template_parameters;cxx_std_11;cxx_alias/;"	v
+CMAKE_CXX_FLAGS	CMakeLists.txt	/^SET( CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} ${COMPILE_FLAGS}" )$/;"	v
+CMAKE_CXX_IGNORE_EXTENSIONS	CMakeFiles/3.15.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_IGNORE_EXTENSIONS inl;h;hpp;HPP;H;o;O;obj;OBJ;def;DEF;rc;RC)$/;"	v
+CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES	CMakeFiles/3.15.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "\/usr\/include\/c++\/9.2.0;\/usr\/include\/c++\/9.2./;"	v
+CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES	CMakeFiles/3.15.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "\/usr\/lib\/gcc\/x86_64-pc-linux-gnu\/9.2.0;\/usr\/lib;/;"	v
+CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES	CMakeFiles/3.15.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")$/;"	v
+CMAKE_CXX_IMPLICIT_LINK_LIBRARIES	CMakeFiles/3.15.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "stdc++;m;gcc_s;gcc;c;gcc_s;gcc")$/;"	v
+CMAKE_CXX_INCLUDE_REGEX_COMPLAIN	CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_CXX_INCLUDE_REGEX_COMPLAIN ${CMAKE_C_INCLUDE_REGEX_COMPLAIN})$/;"	v
+CMAKE_CXX_INCLUDE_REGEX_SCAN	CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_CXX_INCLUDE_REGEX_SCAN ${CMAKE_C_INCLUDE_REGEX_SCAN})$/;"	v
+CMAKE_CXX_LIBRARY_ARCHITECTURE	CMakeFiles/3.15.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_LIBRARY_ARCHITECTURE "")$/;"	v
+CMAKE_CXX_LINKER_PREFERENCE	CMakeFiles/3.15.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_LINKER_PREFERENCE 30)$/;"	v
+CMAKE_CXX_LINKER_PREFERENCE_PROPAGATES	CMakeFiles/3.15.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_LINKER_PREFERENCE_PROPAGATES 1)$/;"	v
+CMAKE_CXX_PLATFORM_ID	CMakeFiles/3.15.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_PLATFORM_ID "Linux")$/;"	v
+CMAKE_CXX_SIMULATE_ID	CMakeFiles/3.15.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_SIMULATE_ID "")$/;"	v
+CMAKE_CXX_SIMULATE_VERSION	CMakeFiles/3.15.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_SIMULATE_VERSION "")$/;"	v
+CMAKE_CXX_SIZEOF_DATA_PTR	CMakeFiles/3.15.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_SIZEOF_DATA_PTR "8")$/;"	v
+CMAKE_CXX_SOURCE_FILE_EXTENSIONS	CMakeFiles/3.15.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_SOURCE_FILE_EXTENSIONS C;M;c++;cc;cpp;cxx;mm;CPP)$/;"	v
+CMAKE_CXX_STANDARD_COMPUTED_DEFAULT	CMakeFiles/3.15.5/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_STANDARD_COMPUTED_DEFAULT "14")$/;"	v
+CMAKE_CXX_TARGET_INCLUDE_PATH	CMakeFiles/protoboost.dir/DependInfo.cmake	/^set(CMAKE_CXX_TARGET_INCLUDE_PATH$/;"	v
+CMAKE_C_ABI_COMPILED	CMakeFiles/3.15.5/CMakeCCompiler.cmake	/^set(CMAKE_C_ABI_COMPILED TRUE)$/;"	v
+CMAKE_C_CL_SHOWINCLUDES_PREFIX	CMakeFiles/3.15.5/CMakeCCompiler.cmake	/^set(CMAKE_C_CL_SHOWINCLUDES_PREFIX "")$/;"	v
+CMAKE_C_COMPILER	CMakeFiles/3.15.5/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER "\/usr\/bin\/cc")$/;"	v
+CMAKE_C_COMPILER_ABI	CMakeFiles/3.15.5/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_ABI "ELF")$/;"	v
+CMAKE_C_COMPILER_AR	CMakeFiles/3.15.5/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_AR "\/usr\/bin\/gcc-ar")$/;"	v
+CMAKE_C_COMPILER_ARG1	CMakeFiles/3.15.5/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_ARG1 "")$/;"	v
+CMAKE_C_COMPILER_ENV_VAR	CMakeFiles/3.15.5/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_ENV_VAR "CC")$/;"	v
+CMAKE_C_COMPILER_FRONTEND_VARIANT	CMakeFiles/3.15.5/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_FRONTEND_VARIANT "")$/;"	v
+CMAKE_C_COMPILER_ID	CMakeFiles/3.15.5/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_ID "GNU")$/;"	v
+CMAKE_C_COMPILER_ID_RUN	CMakeFiles/3.15.5/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_ID_RUN 1)$/;"	v
+CMAKE_C_COMPILER_LOADED	CMakeFiles/3.15.5/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_LOADED 1)$/;"	v
+CMAKE_C_COMPILER_RANLIB	CMakeFiles/3.15.5/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_RANLIB "\/usr\/bin\/gcc-ranlib")$/;"	v
+CMAKE_C_COMPILER_VERSION	CMakeFiles/3.15.5/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_VERSION "9.2.0")$/;"	v
+CMAKE_C_COMPILER_VERSION_INTERNAL	CMakeFiles/3.15.5/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_VERSION_INTERNAL "")$/;"	v
+CMAKE_C_COMPILER_WORKS	CMakeFiles/3.15.5/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_WORKS TRUE)$/;"	v
+CMAKE_C_COMPILER_WRAPPER	CMakeFiles/3.15.5/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_WRAPPER "")$/;"	v
+CMAKE_C_COMPILE_FEATURES	CMakeFiles/3.15.5/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILE_FEATURES "c_std_90;c_function_prototypes;c_std_99;c_restrict;c_variadic_macr/;"	v
+CMAKE_C_IGNORE_EXTENSIONS	CMakeFiles/3.15.5/CMakeCCompiler.cmake	/^set(CMAKE_C_IGNORE_EXTENSIONS h;H;o;O;obj;OBJ;def;DEF;rc;RC)$/;"	v
+CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES	CMakeFiles/3.15.5/CMakeCCompiler.cmake	/^set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "\/usr\/lib\/gcc\/x86_64-pc-linux-gnu\/9.2.0\/include;\//;"	v
+CMAKE_C_IMPLICIT_LINK_DIRECTORIES	CMakeFiles/3.15.5/CMakeCCompiler.cmake	/^set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "\/usr\/lib\/gcc\/x86_64-pc-linux-gnu\/9.2.0;\/usr\/lib;\//;"	v
+CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES	CMakeFiles/3.15.5/CMakeCCompiler.cmake	/^set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")$/;"	v
+CMAKE_C_IMPLICIT_LINK_LIBRARIES	CMakeFiles/3.15.5/CMakeCCompiler.cmake	/^set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "gcc;gcc_s;c;gcc;gcc_s")$/;"	v
+CMAKE_C_INCLUDE_REGEX_COMPLAIN	CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_C_INCLUDE_REGEX_COMPLAIN "^$")$/;"	v
+CMAKE_C_INCLUDE_REGEX_SCAN	CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_C_INCLUDE_REGEX_SCAN "^.*$")$/;"	v
+CMAKE_C_LIBRARY_ARCHITECTURE	CMakeFiles/3.15.5/CMakeCCompiler.cmake	/^set(CMAKE_C_LIBRARY_ARCHITECTURE "")$/;"	v
+CMAKE_C_LINKER_PREFERENCE	CMakeFiles/3.15.5/CMakeCCompiler.cmake	/^set(CMAKE_C_LINKER_PREFERENCE 10)$/;"	v
+CMAKE_C_PLATFORM_ID	CMakeFiles/3.15.5/CMakeCCompiler.cmake	/^set(CMAKE_C_PLATFORM_ID "Linux")$/;"	v
+CMAKE_C_SIMULATE_ID	CMakeFiles/3.15.5/CMakeCCompiler.cmake	/^set(CMAKE_C_SIMULATE_ID "")$/;"	v
+CMAKE_C_SIMULATE_VERSION	CMakeFiles/3.15.5/CMakeCCompiler.cmake	/^set(CMAKE_C_SIMULATE_VERSION "")$/;"	v
+CMAKE_C_SIZEOF_DATA_PTR	CMakeFiles/3.15.5/CMakeCCompiler.cmake	/^set(CMAKE_C_SIZEOF_DATA_PTR "8")$/;"	v
+CMAKE_C_SOURCE_FILE_EXTENSIONS	CMakeFiles/3.15.5/CMakeCCompiler.cmake	/^set(CMAKE_C_SOURCE_FILE_EXTENSIONS c;m)$/;"	v
+CMAKE_C_STANDARD_COMPUTED_DEFAULT	CMakeFiles/3.15.5/CMakeCCompiler.cmake	/^set(CMAKE_C_STANDARD_COMPUTED_DEFAULT "11")$/;"	v
+CMAKE_DEPENDS_CHECK_CXX	CMakeFiles/protoboost.dir/DependInfo.cmake	/^set(CMAKE_DEPENDS_CHECK_CXX$/;"	v
+CMAKE_DEPENDS_GENERATOR	CMakeFiles/Makefile.cmake	/^set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")$/;"	v
+CMAKE_DEPENDS_LANGUAGES	CMakeFiles/protoboost.dir/DependInfo.cmake	/^set(CMAKE_DEPENDS_LANGUAGES$/;"	v
+CMAKE_DEPEND_INFO_FILES	CMakeFiles/Makefile.cmake	/^set(CMAKE_DEPEND_INFO_FILES$/;"	v
+CMAKE_EXE_LINKER_FLAGS	CMakeLists.txt	/^SET( CMAKE_EXE_LINKER_FLAGS  "${CMAKE_EXE_LINKER_FLAGS} ${LINK_FLAGS}" )$/;"	v
+CMAKE_FORCE_UNIX_PATHS	CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_FORCE_UNIX_PATHS 1)$/;"	v
+CMAKE_Fortran_TARGET_MODULE_DIR	CMakeFiles/protoboost.dir/DependInfo.cmake	/^set(CMAKE_Fortran_TARGET_MODULE_DIR "")$/;"	v
+CMAKE_HOST_SYSTEM	CMakeFiles/3.15.5/CMakeSystem.cmake	/^set(CMAKE_HOST_SYSTEM "Linux-4.19.85-1-MANJARO")$/;"	v
+CMAKE_HOST_SYSTEM_NAME	CMakeFiles/3.15.5/CMakeSystem.cmake	/^set(CMAKE_HOST_SYSTEM_NAME "Linux")$/;"	v
+CMAKE_HOST_SYSTEM_PROCESSOR	CMakeFiles/3.15.5/CMakeSystem.cmake	/^set(CMAKE_HOST_SYSTEM_PROCESSOR "x86_64")$/;"	v
+CMAKE_HOST_SYSTEM_VERSION	CMakeFiles/3.15.5/CMakeSystem.cmake	/^set(CMAKE_HOST_SYSTEM_VERSION "4.19.85-1-MANJARO")$/;"	v
+CMAKE_INSTALL_COMPONENT	cmake_install.cmake	/^    set(CMAKE_INSTALL_COMPONENT "${COMPONENT}")$/;"	v
+CMAKE_INSTALL_COMPONENT	cmake_install.cmake	/^    set(CMAKE_INSTALL_COMPONENT)$/;"	v
+CMAKE_INSTALL_CONFIG_NAME	cmake_install.cmake	/^    set(CMAKE_INSTALL_CONFIG_NAME "")$/;"	v
+CMAKE_INSTALL_MANIFEST	cmake_install.cmake	/^  set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")$/;"	v
+CMAKE_INSTALL_MANIFEST	cmake_install.cmake	/^  set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")$/;"	v
+CMAKE_INSTALL_PREFIX	cmake_install.cmake	/^  set(CMAKE_INSTALL_PREFIX "\/usr\/local")$/;"	v
+CMAKE_INSTALL_SO_NO_EXE	cmake_install.cmake	/^  set(CMAKE_INSTALL_SO_NO_EXE "0")$/;"	v
+CMAKE_INTERNAL_PLATFORM_ABI	CMakeFiles/3.15.5/CMakeCCompiler.cmake	/^  set(CMAKE_INTERNAL_PLATFORM_ABI "${CMAKE_C_COMPILER_ABI}")$/;"	v
+CMAKE_INTERNAL_PLATFORM_ABI	CMakeFiles/3.15.5/CMakeCXXCompiler.cmake	/^  set(CMAKE_INTERNAL_PLATFORM_ABI "${CMAKE_CXX_COMPILER_ABI}")$/;"	v
+CMAKE_LIBRARY_ARCHITECTURE	CMakeFiles/3.15.5/CMakeCCompiler.cmake	/^  set(CMAKE_LIBRARY_ARCHITECTURE "")$/;"	v
+CMAKE_LIBRARY_ARCHITECTURE	CMakeFiles/3.15.5/CMakeCXXCompiler.cmake	/^  set(CMAKE_LIBRARY_ARCHITECTURE "")$/;"	v
+CMAKE_LINKER	CMakeFiles/3.15.5/CMakeCCompiler.cmake	/^set(CMAKE_LINKER "\/usr\/bin\/ld")$/;"	v
+CMAKE_LINKER	CMakeFiles/3.15.5/CMakeCXXCompiler.cmake	/^set(CMAKE_LINKER "\/usr\/bin\/ld")$/;"	v
+CMAKE_MAKEFILE_DEPENDS	CMakeFiles/Makefile.cmake	/^set(CMAKE_MAKEFILE_DEPENDS$/;"	v
+CMAKE_MAKEFILE_OUTPUTS	CMakeFiles/Makefile.cmake	/^set(CMAKE_MAKEFILE_OUTPUTS$/;"	v
+CMAKE_MAKEFILE_PRODUCTS	CMakeFiles/Makefile.cmake	/^set(CMAKE_MAKEFILE_PRODUCTS$/;"	v
+CMAKE_MT	CMakeFiles/3.15.5/CMakeCCompiler.cmake	/^set(CMAKE_MT "")$/;"	v
+CMAKE_MT	CMakeFiles/3.15.5/CMakeCXXCompiler.cmake	/^set(CMAKE_MT "")$/;"	v
+CMAKE_RANLIB	CMakeFiles/3.15.5/CMakeCCompiler.cmake	/^set(CMAKE_RANLIB "\/usr\/bin\/ranlib")$/;"	v
+CMAKE_RANLIB	CMakeFiles/3.15.5/CMakeCXXCompiler.cmake	/^set(CMAKE_RANLIB "\/usr\/bin\/ranlib")$/;"	v
+CMAKE_RELATIVE_PATH_TOP_BINARY	CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_RELATIVE_PATH_TOP_BINARY "\/data\/c\/protoboost")$/;"	v
+CMAKE_RELATIVE_PATH_TOP_SOURCE	CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_RELATIVE_PATH_TOP_SOURCE "\/data\/c\/protoboost")$/;"	v
+CMAKE_SIZEOF_VOID_P	CMakeFiles/3.15.5/CMakeCCompiler.cmake	/^  set(CMAKE_SIZEOF_VOID_P "${CMAKE_C_SIZEOF_DATA_PTR}")$/;"	v
+CMAKE_SIZEOF_VOID_P	CMakeFiles/3.15.5/CMakeCXXCompiler.cmake	/^  set(CMAKE_SIZEOF_VOID_P "${CMAKE_CXX_SIZEOF_DATA_PTR}")$/;"	v
+CMAKE_SOURCE_DIR	Makefile	/^CMAKE_SOURCE_DIR = \/data\/c\/protoboost$/;"	m
+CMAKE_SYSTEM	CMakeFiles/3.15.5/CMakeSystem.cmake	/^set(CMAKE_SYSTEM "Linux-4.19.85-1-MANJARO")$/;"	v
+CMAKE_SYSTEM_LOADED	CMakeFiles/3.15.5/CMakeSystem.cmake	/^set(CMAKE_SYSTEM_LOADED 1)$/;"	v
+CMAKE_SYSTEM_NAME	CMakeFiles/3.15.5/CMakeSystem.cmake	/^set(CMAKE_SYSTEM_NAME "Linux")$/;"	v
+CMAKE_SYSTEM_PROCESSOR	CMakeFiles/3.15.5/CMakeSystem.cmake	/^set(CMAKE_SYSTEM_PROCESSOR "x86_64")$/;"	v
+CMAKE_SYSTEM_VERSION	CMakeFiles/3.15.5/CMakeSystem.cmake	/^set(CMAKE_SYSTEM_VERSION "4.19.85-1-MANJARO")$/;"	v
+CMAKE_TARGET_DEFINITIONS_CXX	CMakeFiles/protoboost.dir/DependInfo.cmake	/^set(CMAKE_TARGET_DEFINITIONS_CXX$/;"	v
+CMAKE_TARGET_LINKED_INFO_FILES	CMakeFiles/protoboost.dir/DependInfo.cmake	/^set(CMAKE_TARGET_LINKED_INFO_FILES$/;"	v
+COMPILER_ID	CMakeFiles/3.15.5/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_ID /;"	d	file:
+COMPILER_ID	CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_ID /;"	d	file:
+COMPILER_VERSION_INTERNAL	CMakeFiles/3.15.5/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_INTERNAL /;"	d	file:
+COMPILER_VERSION_INTERNAL	CMakeFiles/3.15.5/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_INTERNAL /;"	d	file:
+COMPILER_VERSION_INTERNAL	CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_INTERNAL /;"	d	file:
+COMPILER_VERSION_INTERNAL	CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_INTERNAL /;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.15.5/CompilerIdC/CMakeCCompilerId.c	/^  # define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.15.5/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.15.5/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^  # define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.15.5/CompilerIdC/CMakeCCompilerId.c	/^  # define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.15.5/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.15.5/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^  # define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.15.5/CompilerIdC/CMakeCCompilerId.c	/^  # define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.15.5/CompilerIdC/CMakeCCompilerId.c	/^#   define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.15.5/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.15.5/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^  # define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_TWEAK	CMakeFiles/3.15.5/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_TWEAK /;"	d	file:
+COMPILER_VERSION_TWEAK	CMakeFiles/3.15.5/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_TWEAK /;"	d	file:
+COMPILER_VERSION_TWEAK	CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_TWEAK /;"	d	file:
+COMPILER_VERSION_TWEAK	CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_TWEAK /;"	d	file:
+COMPILE_FLAGS	CMakeLists.txt	/^SET(COMPILE_FLAGS "-I\/usr\/local\/include -pthread ")$/;"	v
+CXX_STD	CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define CXX_STD /;"	d	file:
+CYGWIN	CMakeFiles/3.15.5/CMakeCCompiler.cmake	/^  set(CYGWIN 1)$/;"	v
+CYGWIN	CMakeFiles/3.15.5/CMakeCXXCompiler.cmake	/^  set(CYGWIN 1)$/;"	v
+C_DIALECT	CMakeFiles/3.15.5/CompilerIdC/CMakeCCompilerId.c	/^#  define C_DIALECT /;"	d	file:
+C_DIALECT	CMakeFiles/3.15.5/CompilerIdC/CMakeCCompilerId.c	/^#  define C_DIALECT$/;"	d	file:
+C_DIALECT	CMakeFiles/3.15.5/CompilerIdC/CMakeCCompilerId.c	/^# define C_DIALECT /;"	d	file:
+Clear	proto/include/TrxMessage.pb.cc	/^void Message::Clear() {$/;"	f	class:Trx::Message	typeref:typename:void
+CopyFrom	proto/include/TrxMessage.pb.cc	/^void Message::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {$/;"	f	class:Trx::Message	typeref:typename:void
+CopyFrom	proto/include/TrxMessage.pb.cc	/^void Message::CopyFrom(const Message& from) {$/;"	f	class:Trx::Message	typeref:typename:void
+DEC	CMakeFiles/3.15.5/CompilerIdC/CMakeCCompilerId.c	/^#define DEC(/;"	d	file:
+DEC	CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define DEC(/;"	d	file:
+DO_	proto/include/TrxMessage.pb.cc	/^#define DO_(/;"	d	file:
+EQUALS	Makefile	/^EQUALS = =$/;"	m
+FullMessageName	proto/include/TrxMessage.pb.h	/^  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {$/;"	f	class:Trx::Message	typeref:typename:::PROTOBUF_NAMESPACE_ID::StringPiece
+GOOGLE_PROTOBUF_INCLUDED_include_2fTrxMessage_2eproto	proto/include/TrxMessage.pb.h	/^#define GOOGLE_PROTOBUF_INCLUDED_include_2fTrxMessage_2eproto$/;"	d
+GetArenaNoVirtual	proto/include/TrxMessage.pb.h	/^  inline ::PROTOBUF_NAMESPACE_ID::Arena* GetArenaNoVirtual() const {$/;"	f	class:Trx::Message	typeref:typename:::PROTOBUF_NAMESPACE_ID::Arena *
+GetCachedSize	proto/include/TrxMessage.pb.h	/^  int GetCachedSize() const final { return _cached_size_.Get(); }$/;"	f	class:Trx::Message	typeref:typename:int
+GetDescriptor	proto/include/TrxMessage.pb.h	/^  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {$/;"	f	class:Trx::Message	typeref:typename:const::PROTOBUF_NAMESPACE_ID::Descriptor *
+GetMetadata	proto/include/TrxMessage.pb.cc	/^::PROTOBUF_NAMESPACE_ID::Metadata Message::GetMetadata() const {$/;"	f	class:Trx::Message	typeref:typename:::PROTOBUF_NAMESPACE_ID::Metadata
+GetMetadataStatic	proto/include/TrxMessage.pb.h	/^  static ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadataStatic() {$/;"	f	class:Trx::Message	typeref:typename:::PROTOBUF_NAMESPACE_ID::Metadata
+GetReflection	proto/include/TrxMessage.pb.h	/^  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {$/;"	f	class:Trx::Message	typeref:typename:const::PROTOBUF_NAMESPACE_ID::Reflection *
+HEX	CMakeFiles/3.15.5/CompilerIdC/CMakeCCompilerId.c	/^#define HEX(/;"	d	file:
+HEX	CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define HEX(/;"	d	file:
+HasBitSetters	proto/include/TrxMessage.pb.cc	/^class Message::HasBitSetters {$/;"	c	class:Trx::Message	file:
+HasBits	proto/include/TrxMessage.pb.cc	/^  using HasBits = decltype(std::declval<Message>()._has_bits_);$/;"	t	class:Trx::Message::HasBitSetters	file:
+ID_VOID_MAIN	CMakeFiles/3.15.5/CompilerIdC/CMakeCCompilerId.c	/^# define ID_VOID_MAIN$/;"	d	file:
+InitAsDefaultInstance	proto/include/TrxMessage.pb.cc	/^void Message::InitAsDefaultInstance() {$/;"	f	class:Trx::Message	typeref:typename:void
+InitDefaultsscc_info_Message_include_2fTrxMessage_2eproto	proto/include/TrxMessage.pb.cc	/^static void InitDefaultsscc_info_Message_include_2fTrxMessage_2eproto() {$/;"	f	typeref:typename:void	file:
+InternalSerializeWithCachedSizesToArray	proto/include/TrxMessage.pb.cc	/^::PROTOBUF_NAMESPACE_ID::uint8* Message::InternalSerializeWithCachedSizesToArray($/;"	f	class:Trx::Message	typeref:typename:::PROTOBUF_NAMESPACE_ID::uint8 *
+InternalSwap	proto/include/TrxMessage.pb.cc	/^void Message::InternalSwap(Message* other) {$/;"	f	class:Trx::Message	typeref:typename:void
+IsInitialized	proto/include/TrxMessage.pb.cc	/^bool Message::IsInitialized() const {$/;"	f	class:Trx::Message	typeref:typename:bool
+LINK_FLAGS	CMakeLists.txt	/^SET(LINK_FLAGS "-L\/usr\/local\/lib -lprotobuf -pthread -lpthread")$/;"	v
+MINGW	CMakeFiles/3.15.5/CMakeCCompiler.cmake	/^  set(MINGW 1)$/;"	v
+MINGW	CMakeFiles/3.15.5/CMakeCXXCompiler.cmake	/^  set(MINGW 1)$/;"	v
+MaybeArenaPtr	proto/include/TrxMessage.pb.h	/^  inline void* MaybeArenaPtr() const {$/;"	f	class:Trx::Message	typeref:typename:void *
+MergeFrom	proto/include/TrxMessage.pb.cc	/^void Message::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {$/;"	f	class:Trx::Message	typeref:typename:void
+MergeFrom	proto/include/TrxMessage.pb.cc	/^void Message::MergeFrom(const Message& from) {$/;"	f	class:Trx::Message	typeref:typename:void
+MergePartialFromCodedStream	proto/include/TrxMessage.pb.cc	/^bool Message::MergePartialFromCodedStream($/;"	f	class:Trx::Message	typeref:typename:bool
+Message	include/TrxMessage.proto	/^message Message {$/;"	m
+Message	proto/include/TrxMessage.pb.cc	/^Message::Message()$/;"	f	class:Trx::Message
+Message	proto/include/TrxMessage.pb.cc	/^Message::Message(const Message& from)$/;"	f	class:Trx::Message
+Message	proto/include/TrxMessage.pb.h	/^  Message(Message&& from) noexcept$/;"	f	class:Trx::Message
+Message	proto/include/TrxMessage.pb.h	/^class Message :$/;"	c	namespace:Trx
+MessageDefaultTypeInternal	proto/include/TrxMessage.pb.cc	/^class MessageDefaultTypeInternal {$/;"	c	namespace:Trx	file:
+New	proto/include/TrxMessage.pb.h	/^  Message* New(::PROTOBUF_NAMESPACE_ID::Arena* arena) const final {$/;"	f	class:Trx::Message	typeref:typename:Message *
+New	proto/include/TrxMessage.pb.h	/^  inline Message* New() const final {$/;"	f	class:Trx::Message	typeref:typename:Message *
+PLATFORM_ID	CMakeFiles/3.15.5/CompilerIdC/CMakeCCompilerId.c	/^#  define PLATFORM_ID /;"	d	file:
+PLATFORM_ID	CMakeFiles/3.15.5/CompilerIdC/CMakeCCompilerId.c	/^#  define PLATFORM_ID$/;"	d	file:
+PLATFORM_ID	CMakeFiles/3.15.5/CompilerIdC/CMakeCCompilerId.c	/^# define PLATFORM_ID /;"	d	file:
+PLATFORM_ID	CMakeFiles/3.15.5/CompilerIdC/CMakeCCompilerId.c	/^# define PLATFORM_ID$/;"	d	file:
+PLATFORM_ID	CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define PLATFORM_ID /;"	d	file:
+PLATFORM_ID	CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define PLATFORM_ID$/;"	d	file:
+PLATFORM_ID	CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define PLATFORM_ID /;"	d	file:
+PLATFORM_ID	CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define PLATFORM_ID$/;"	d	file:
+PROTOBUF_INTERNAL_EXPORT_include_2fTrxMessage_2eproto	proto/include/TrxMessage.pb.h	/^#define PROTOBUF_INTERNAL_EXPORT_include_2fTrxMessage_2eproto$/;"	d
+RM	Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
+Read	include/AsioAdapting.h	/^AsioInputStream<SyncReadStream>::Read(void* buffer, int size)$/;"	f	class:AsioInputStream	typeref:typename:int
+SHELL	Makefile	/^SHELL = \/bin\/sh$/;"	m
+SIMULATE_ID	CMakeFiles/3.15.5/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_ID /;"	d	file:
+SIMULATE_ID	CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_ID /;"	d	file:
+SIMULATE_VERSION_MAJOR	CMakeFiles/3.15.5/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_VERSION_MAJOR /;"	d	file:
+SIMULATE_VERSION_MAJOR	CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_VERSION_MAJOR /;"	d	file:
+SIMULATE_VERSION_MINOR	CMakeFiles/3.15.5/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_VERSION_MINOR /;"	d	file:
+SIMULATE_VERSION_MINOR	CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_VERSION_MINOR /;"	d	file:
+SIMULATE_VERSION_PATCH	CMakeFiles/3.15.5/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_VERSION_PATCH /;"	d	file:
+SIMULATE_VERSION_PATCH	CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_VERSION_PATCH /;"	d	file:
+SOURCES	CMakeLists.txt	/^set(SOURCES main.cpp include\/ProtobufHelpers.cpp)$/;"	v
+STRINGIFY	CMakeFiles/3.15.5/CompilerIdC/CMakeCCompilerId.c	/^#define STRINGIFY(/;"	d	file:
+STRINGIFY	CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define STRINGIFY(/;"	d	file:
+STRINGIFY_HELPER	CMakeFiles/3.15.5/CompilerIdC/CMakeCCompilerId.c	/^#define STRINGIFY_HELPER(/;"	d	file:
+STRINGIFY_HELPER	CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define STRINGIFY_HELPER(/;"	d	file:
+SUFFIXES	Makefile	/^SUFFIXES =$/;"	m
+SerializeWithCachedSizes	proto/include/TrxMessage.pb.cc	/^void Message::SerializeWithCachedSizes($/;"	f	class:Trx::Message	typeref:typename:void
+SetCachedSize	proto/include/TrxMessage.pb.cc	/^void Message::SetCachedSize(int size) const {$/;"	f	class:Trx::Message	typeref:typename:void
+SharedCtor	proto/include/TrxMessage.pb.cc	/^void Message::SharedCtor() {$/;"	f	class:Trx::Message	typeref:typename:void
+SharedDtor	proto/include/TrxMessage.pb.cc	/^void Message::SharedDtor() {$/;"	f	class:Trx::Message	typeref:typename:void
+Swap	proto/include/TrxMessage.pb.cc	/^void Message::Swap(Message* other) {$/;"	f	class:Trx::Message	typeref:typename:void
+TRX_MESSAGE	CMakeLists.txt	/^set(TRX_MESSAGE include\/TrxMessage.pb.cc)$/;"	v
+TableStruct_include_2fTrxMessage_2eproto	proto/include/TrxMessage.pb.h	/^struct TableStruct_include_2fTrxMessage_2eproto {$/;"	s
+Trx	include/TrxMessage.proto	/^package Trx;$/;"	p
+Trx	proto/include/TrxMessage.pb.cc	/^namespace Trx {$/;"	n	file:
+Trx	proto/include/TrxMessage.pb.h	/^namespace Trx {$/;"	n
+UNIX	CMakeFiles/3.15.5/CMakeCCompiler.cmake	/^  set(UNIX 1)$/;"	v
+UNIX	CMakeFiles/3.15.5/CMakeCXXCompiler.cmake	/^  set(UNIX 1)$/;"	v
+Write	include/AsioAdapting.h	/^AsioOutputStream<SyncWriteStream>::Write(const void* buffer, int size)$/;"	f	class:AsioOutputStream	typeref:typename:bool
+_InternalParse	proto/include/TrxMessage.pb.cc	/^const char* Message::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseCon/;"	f	class:Trx::Message	typeref:typename:const char *
+_Message_default_instance_	proto/include/TrxMessage.pb.cc	/^} _Message_default_instance_;$/;"	v	namespace:Trx	typeref:class:Trx::MessageDefaultTypeInternal
+all	Makefile	/^all: cmake_check_build_system$/;"	t
+body	include/TrxMessage.proto	/^  optional string body = 2;$/;"	f
+body	proto/include/TrxMessage.pb.h	/^inline const std::string& Message::body() const {$/;"	f	class:Trx::Message	typeref:typename:const std::string &
+clean	Makefile	/^clean:$/;"	t
+clean/fast	Makefile	/^clean\/fast: clean$/;"	t
+clear_body	proto/include/TrxMessage.pb.h	/^inline void Message::clear_body() {$/;"	f	class:Trx::Message	typeref:typename:void
+clear_type	proto/include/TrxMessage.pb.h	/^inline void Message::clear_type() {$/;"	f	class:Trx::Message	typeref:typename:void
+cmake_check_build_system	Makefile	/^cmake_check_build_system:$/;"	t
+cmake_force	Makefile	/^cmake_force:$/;"	t
+const	CMakeFiles/3.15.5/CompilerIdC/CMakeCCompilerId.c	/^# define const$/;"	d	file:
+default_instance	proto/include/TrxMessage.pb.cc	/^const Message& Message::default_instance() {$/;"	f	class:Trx::Message	typeref:typename:const Message &
+default_target	Makefile	/^default_target: all$/;"	t
+depend	Makefile	/^depend:$/;"	t
+descriptor	proto/include/TrxMessage.pb.h	/^  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {$/;"	f	class:Trx::Message	typeref:typename:const::PROTOBUF_NAMESPACE_ID::Descriptor *
+descriptor_table_include_2fTrxMessage_2eproto	proto/include/TrxMessage.pb.cc	/^const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_include_2fTrxMessage_2/;"	v	typeref:typename:const::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable
+descriptor_table_include_2fTrxMessage_2eproto_deps	proto/include/TrxMessage.pb.cc	/^static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_include_2/;"	v	typeref:typename:const::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable * const[1]	file:
+descriptor_table_include_2fTrxMessage_2eproto_initialized	proto/include/TrxMessage.pb.cc	/^static bool descriptor_table_include_2fTrxMessage_2eproto_initialized = false;$/;"	v	typeref:typename:bool	file:
+descriptor_table_protodef_include_2fTrxMessage_2eproto	proto/include/TrxMessage.pb.cc	/^const char descriptor_table_protodef_include_2fTrxMessage_2eproto[] =$/;"	v	typeref:typename:const char[]
+dynamic_init_dummy_include_2fTrxMessage_2eproto	proto/include/TrxMessage.pb.cc	/^static bool dynamic_init_dummy_include_2fTrxMessage_2eproto = (  ::PROTOBUF_NAMESPACE_ID::intern/;"	v	typeref:typename:bool	file:
+edit_cache	Makefile	/^edit_cache:$/;"	t
+edit_cache/fast	Makefile	/^edit_cache\/fast: edit_cache$/;"	t
+field_metadata	proto/include/TrxMessage.pb.h	/^  static const ::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata field_metadata[];$/;"	m	struct:TableStruct_include_2fTrxMessage_2eproto	typeref:typename:const::PROTOBUF_NAMESPACE_ID::internal::FieldMetadata[]
+file_level_enum_descriptors_include_2fTrxMessage_2eproto	proto/include/TrxMessage.pb.cc	/^static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_inc/;"	v	typeref:typename:::PROTOBUF_NAMESPACE_ID::EnumDescriptor const **	file:
+file_level_service_descriptors_include_2fTrxMessage_2eproto	proto/include/TrxMessage.pb.cc	/^static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descripto/;"	v	typeref:typename:::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const **	file:
+google	include/ProtobufHelpers.cpp	/^namespace google {$/;"	n	file:
+google	include/ProtobufHelpers.h	/^namespace google {$/;"	n
+has_body	proto/include/TrxMessage.pb.h	/^inline bool Message::has_body() const {$/;"	f	class:Trx::Message	typeref:typename:bool
+has_type	proto/include/TrxMessage.pb.h	/^inline bool Message::has_type() const {$/;"	f	class:Trx::Message	typeref:typename:bool
+help	Makefile	/^help:$/;"	t
+include/ProtobufHelpers.cpp.i	Makefile	/^include\/ProtobufHelpers.cpp.i:$/;"	t
+include/ProtobufHelpers.cpp.o	Makefile	/^include\/ProtobufHelpers.cpp.o:$/;"	t
+include/ProtobufHelpers.cpp.s	Makefile	/^include\/ProtobufHelpers.cpp.s:$/;"	t
+include/ProtobufHelpers.i	Makefile	/^include\/ProtobufHelpers.i: include\/ProtobufHelpers.cpp.i$/;"	t
+include/ProtobufHelpers.o	Makefile	/^include\/ProtobufHelpers.o: include\/ProtobufHelpers.cpp.o$/;"	t
+include/ProtobufHelpers.s	Makefile	/^include\/ProtobufHelpers.s: include\/ProtobufHelpers.cpp.s$/;"	t
+include/TrxMessage.pb.cc.i	Makefile	/^include\/TrxMessage.pb.cc.i:$/;"	t
+include/TrxMessage.pb.cc.o	Makefile	/^include\/TrxMessage.pb.cc.o:$/;"	t
+include/TrxMessage.pb.cc.s	Makefile	/^include\/TrxMessage.pb.cc.s:$/;"	t
+include/TrxMessage.pb.i	Makefile	/^include\/TrxMessage.pb.i: include\/TrxMessage.pb.cc.i$/;"	t
+include/TrxMessage.pb.o	Makefile	/^include\/TrxMessage.pb.o: include\/TrxMessage.pb.cc.o$/;"	t
+include/TrxMessage.pb.s	Makefile	/^include\/TrxMessage.pb.s: include\/TrxMessage.pb.cc.s$/;"	t
+info_arch	CMakeFiles/3.15.5/CompilerIdC/CMakeCCompilerId.c	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v	typeref:typename:char const *
+info_arch	CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v	typeref:typename:char const *
+info_compiler	CMakeFiles/3.15.5/CompilerIdC/CMakeCCompilerId.c	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v	typeref:typename:char const *
+info_compiler	CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v	typeref:typename:char const *
+info_cray	CMakeFiles/3.15.5/CompilerIdC/CMakeCCompilerId.c	/^char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";$/;"	v	typeref:typename:char const *
+info_cray	CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";$/;"	v	typeref:typename:char const *
+info_language_dialect_default	CMakeFiles/3.15.5/CompilerIdC/CMakeCCompilerId.c	/^const char* info_language_dialect_default =$/;"	v	typeref:typename:const char *
+info_language_dialect_default	CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^const char* info_language_dialect_default = "INFO" ":" "dialect_default["$/;"	v	typeref:typename:const char *
+info_platform	CMakeFiles/3.15.5/CompilerIdC/CMakeCCompilerId.c	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v	typeref:typename:char const *
+info_platform	CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v	typeref:typename:char const *
+info_simulate	CMakeFiles/3.15.5/CompilerIdC/CMakeCCompilerId.c	/^char const* info_simulate = "INFO" ":" "simulate[" SIMULATE_ID "]";$/;"	v	typeref:typename:char const *
+info_simulate	CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_simulate = "INFO" ":" "simulate[" SIMULATE_ID "]";$/;"	v	typeref:typename:char const *
+info_simulate_version	CMakeFiles/3.15.5/CompilerIdC/CMakeCCompilerId.c	/^char const info_simulate_version[] = {$/;"	v	typeref:typename:char const[]
+info_simulate_version	CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_simulate_version[] = {$/;"	v	typeref:typename:char const[]
+info_version	CMakeFiles/3.15.5/CompilerIdC/CMakeCCompilerId.c	/^char const info_version[] = {$/;"	v	typeref:typename:char const[]
+info_version	CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_version[] = {$/;"	v	typeref:typename:char const[]
+info_version_internal	CMakeFiles/3.15.5/CompilerIdC/CMakeCCompilerId.c	/^char const info_version_internal[] = {$/;"	v	typeref:typename:char const[]
+info_version_internal	CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_version_internal[] = {$/;"	v	typeref:typename:char const[]
+internal	proto/include/TrxMessage.pb.h	/^namespace internal {$/;"	n
+internal_default_instance	proto/include/TrxMessage.pb.h	/^  static inline const Message* internal_default_instance() {$/;"	f	class:Trx::Message	typeref:typename:const Message *
+io	include/ProtobufHelpers.cpp	/^        namespace io {$/;"	n	namespace:google::protobuf	file:
+io	include/ProtobufHelpers.h	/^        namespace io {$/;"	n	namespace:google::protobuf
+kBodyFieldNumber	proto/include/TrxMessage.pb.cc	/^const int Message::kBodyFieldNumber;$/;"	m	class:Trx::Message	typeref:typename:const int
+kBodyFieldNumber	proto/include/TrxMessage.pb.h	/^  static const int kBodyFieldNumber = 2;$/;"	m	class:Trx::Message	typeref:typename:const int
+kIndexInFileMessages	proto/include/TrxMessage.pb.h	/^  static constexpr int kIndexInFileMessages =$/;"	m	class:Trx::Message	typeref:typename:int
+kTypeFieldNumber	proto/include/TrxMessage.pb.cc	/^const int Message::kTypeFieldNumber;$/;"	m	class:Trx::Message	typeref:typename:const int
+kTypeFieldNumber	proto/include/TrxMessage.pb.h	/^  static const int kTypeFieldNumber = 1;$/;"	m	class:Trx::Message	typeref:typename:const int
+m_Socket	include/AsioAdapting.h	/^    SyncReadStream& m_Socket;$/;"	m	class:AsioInputStream	typeref:typename:SyncReadStream &
+m_Socket	include/AsioAdapting.h	/^    SyncWriteStream& m_Socket;$/;"	m	class:AsioOutputStream	typeref:typename:SyncWriteStream &
+main	CMakeFiles/3.15.5/CompilerIdC/CMakeCCompilerId.c	/^int main(argc, argv) int argc; char *argv[];$/;"	f
+main	CMakeFiles/3.15.5/CompilerIdC/CMakeCCompilerId.c	/^void main() {}$/;"	f	typeref:typename:void
+main	CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^int main(int argc, char* argv[])$/;"	f	typeref:typename:int
+main	main.cpp	/^int main(int argc, char* argv[]) {$/;"	f	typeref:typename:int
+main.cpp.i	Makefile	/^main.cpp.i:$/;"	t
+main.cpp.o	Makefile	/^main.cpp.o:$/;"	t
+main.cpp.s	Makefile	/^main.cpp.s:$/;"	t
+main.i	Makefile	/^main.i: main.cpp.i$/;"	t
+main.o	Makefile	/^main.o: main.cpp.o$/;"	t
+main.s	Makefile	/^main.s: main.cpp.s$/;"	t
+mutable_body	proto/include/TrxMessage.pb.h	/^inline std::string* Message::mutable_body() {$/;"	f	class:Trx::Message	typeref:typename:std::string *
+mutable_unknown_fields	proto/include/TrxMessage.pb.h	/^  inline ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet* mutable_unknown_fields() {$/;"	f	class:Trx::Message	typeref:typename:::PROTOBUF_NAMESPACE_ID::UnknownFieldSet *
+offsets	proto/include/TrxMessage.pb.h	/^  static const ::PROTOBUF_NAMESPACE_ID::uint32 offsets[];$/;"	m	struct:TableStruct_include_2fTrxMessage_2eproto	typeref:typename:const::PROTOBUF_NAMESPACE_ID::uint32[]
+operator =	proto/include/TrxMessage.pb.h	/^  inline Message& operator=(Message&& from) noexcept {$/;"	f	class:Trx::Message	typeref:typename:Message &
+operator =	proto/include/TrxMessage.pb.h	/^  inline Message& operator=(const Message& from) {$/;"	f	class:Trx::Message	typeref:typename:Message &
+preinstall	Makefile	/^preinstall: all$/;"	t
+preinstall/fast	Makefile	/^preinstall\/fast:$/;"	t
+protoboost	CMakeLists.txt	/^project(protoboost)$/;"	p
+protoboost	Makefile	/^protoboost: cmake_check_build_system$/;"	t
+protoboost/fast	Makefile	/^protoboost\/fast:$/;"	t
+protobuf	include/ProtobufHelpers.cpp	/^    namespace protobuf {$/;"	n	namespace:google	file:
+protobuf	include/ProtobufHelpers.h	/^    namespace protobuf {$/;"	n	namespace:google
+qnxnto	CMakeFiles/3.15.5/CompilerIdC/CMakeCCompilerId.c	/^char const* qnxnto = "INFO" ":" "qnxnto[]";$/;"	v	typeref:typename:char const *
+qnxnto	CMakeFiles/3.15.5/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* qnxnto = "INFO" ":" "qnxnto[]";$/;"	v	typeref:typename:char const *
+readDelimitedFrom	include/ProtobufHelpers.cpp	/^            bool readDelimitedFrom($/;"	f	namespace:google::protobuf::io	typeref:typename:bool
+rebuild_cache	Makefile	/^rebuild_cache:$/;"	t
+rebuild_cache/fast	Makefile	/^rebuild_cache\/fast: rebuild_cache$/;"	t
+release_body	proto/include/TrxMessage.pb.h	/^inline std::string* Message::release_body() {$/;"	f	class:Trx::Message	typeref:typename:std::string *
+serialization_table	proto/include/TrxMessage.pb.h	/^  static const ::PROTOBUF_NAMESPACE_ID::internal::SerializationTable serialization_table[];$/;"	m	struct:TableStruct_include_2fTrxMessage_2eproto	typeref:typename:const::PROTOBUF_NAMESPACE_ID::internal::SerializationTable[]
+set_allocated_body	proto/include/TrxMessage.pb.h	/^inline void Message::set_allocated_body(std::string* body) {$/;"	f	class:Trx::Message	typeref:typename:void
+set_body	proto/include/TrxMessage.pb.h	/^inline void Message::set_body(const char* value) {$/;"	f	class:Trx::Message	typeref:typename:void
+set_body	proto/include/TrxMessage.pb.h	/^inline void Message::set_body(const char* value, size_t size) {$/;"	f	class:Trx::Message	typeref:typename:void
+set_body	proto/include/TrxMessage.pb.h	/^inline void Message::set_body(const std::string& value) {$/;"	f	class:Trx::Message	typeref:typename:void
+set_body	proto/include/TrxMessage.pb.h	/^inline void Message::set_body(std::string&& value) {$/;"	f	class:Trx::Message	typeref:typename:void
+set_has_body	proto/include/TrxMessage.pb.cc	/^  static void set_has_body(HasBits* has_bits) {$/;"	f	class:Trx::Message::HasBitSetters	typeref:typename:void	file:
+set_has_type	proto/include/TrxMessage.pb.cc	/^  static void set_has_type(HasBits* has_bits) {$/;"	f	class:Trx::Message::HasBitSetters	typeref:typename:void	file:
+set_type	proto/include/TrxMessage.pb.h	/^inline void Message::set_type(::PROTOBUF_NAMESPACE_ID::int32 value) {$/;"	f	class:Trx::Message	typeref:typename:void
+swap	proto/include/TrxMessage.pb.h	/^  friend void swap(Message& a, Message& b) {$/;"	f	namespace:Trx	typeref:typename:void
+type	include/TrxMessage.proto	/^  required int32 type = 1;$/;"	f
+type	proto/include/TrxMessage.pb.h	/^inline ::PROTOBUF_NAMESPACE_ID::int32 Message::type() const {$/;"	f	class:Trx::Message	typeref:typename:::PROTOBUF_NAMESPACE_ID::int32
+unknown_fields	proto/include/TrxMessage.pb.h	/^  inline const ::PROTOBUF_NAMESPACE_ID::UnknownFieldSet& unknown_fields() const {$/;"	f	class:Trx::Message	typeref:typename:const::PROTOBUF_NAMESPACE_ID::UnknownFieldSet &
+volatile	CMakeFiles/3.15.5/CompilerIdC/CMakeCCompilerId.c	/^# define volatile$/;"	d	file:
+writeDelimitedTo	include/ProtobufHelpers.cpp	/^            bool writeDelimitedTo($/;"	f	namespace:google::protobuf::io	typeref:typename:bool
+~Message	proto/include/TrxMessage.pb.cc	/^Message::~Message() {$/;"	f	class:Trx::Message

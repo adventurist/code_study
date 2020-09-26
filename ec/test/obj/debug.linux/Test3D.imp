@@ -1,0 +1,142 @@
+[Imported Modules]
+   [This]
+      [Public]
+      [Imported Classes]
+         ecere::com::Module
+            [Instantiated]
+        .
+   ecere
+      [Private]
+      [Imported Classes]
+         ecere::gfx::BitmapResource
+            [Instantiated]
+            [Imported Properties]
+               fileName
+                  [Set]
+                  [Get]
+               window
+                  [Set]
+               bitmap
+                  [Set]
+                  [Get]
+               .
+         ecere::gfx3D::meshes::Sphere
+            [Instantiated]
+            [Imported Methods]
+               Create
+               .
+         ecere::gfx3D::meshes::Cube
+            [Instantiated]
+            [Imported Methods]
+               Create
+               .
+         ecere::gfx3D::Material
+            [Instantiated]
+         ecere::gfx3D::Camera
+            [Instantiated]
+            [Imported Methods]
+               Setup
+               Update
+               .
+            [Imported Properties]
+               type
+                  [Set]
+                  [Get]
+               position
+                  [Set]
+                  [Get]
+               orientation
+                  [Set]
+                  [Get]
+               fov
+                  [Set]
+                  [Get]
+               .
+         ecere::gui::GuiApplication
+            [Imported Properties]
+               driver
+                  [Set]
+                  [Get]
+               .
+         ecere::gui::Window
+            [Imported Methods]
+               GetMousePosition
+               Capture
+               ReleaseCapture
+               Move
+               Update
+               Destroy
+               .
+            [Imported Properties]
+               text
+                  [Set]
+                  [Get]
+               background
+                  [Set]
+                  [Get]
+               borderStyle
+                  [Set]
+                  [Get]
+               hasMaximize
+                  [Set]
+                  [Get]
+               hasMinimize
+                  [Set]
+                  [Get]
+               hasClose
+                  [Set]
+                  [Get]
+               size
+                  [Set]
+                  [Get]
+               displaySystem
+                  [Get]
+               display
+                  [Get]
+               position
+                  [Set]
+                  [Get]
+               .
+         ecere::gfx3D::Object
+            [Instantiated]
+            [Imported Methods]
+               UpdateTransform
+               .
+            [Imported Properties]
+               mesh
+                  [Set]
+                  [Get]
+               transform
+                  [Set]
+                  [Get]
+               .
+         ecere::gfx3D::Mesh
+            [Imported Methods]
+               ApplyMaterial
+               ApplyTranslucency
+               .
+         ecere::gfx::Surface
+            [Imported Methods]
+               Clear
+               .
+         ecere::gfx::Display
+            [Imported Methods]
+               SetLight
+               SetCamera
+               DrawObject
+               .
+            [Imported Properties]
+               fogDensity
+                  [Set]
+               .
+         ecere::sys::Degrees
+            [Imported Properties]
+               ecere::sys::Radians
+                  [Set]
+                  [Get]
+               .
+        .
+      [Imported Functions]
+         ecere::sys::GetTime
+        .
+   .

@@ -1,0 +1,7 @@
+<map id="DatabaseConnection" name="DatabaseConnection">
+<area shape="rect" id="node1" title=" " alt="" coords="99,513,273,752"/>
+<area shape="rect" id="node2" href="$classDatabaseInterface.html" title=" " alt="" coords="5,315,148,451"/>
+<area shape="rect" id="node3" title=" " alt="" coords="266,5,325,83"/>
+<area shape="rect" id="node4" href="$structDatabaseConfiguration.html" title=" " alt="" coords="224,344,396,421"/>
+<area shape="rect" id="node5" href="$structDatabaseCredentials.html" title=" " alt="" coords="387,175,545,252"/>
+</map>

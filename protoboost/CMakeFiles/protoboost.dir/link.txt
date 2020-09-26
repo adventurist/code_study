@@ -1,0 +1,1 @@
+/usr/bin/c++   -I/usr/local/include -I/usr/local/lib -pthread    -L/usr/local/lib -lprotobuf -pthread -lpthread -rdynamic CMakeFiles/protoboost.dir/main.cpp.o CMakeFiles/protoboost.dir/include/ProtobufHelpers.cpp.o CMakeFiles/protoboost.dir/include/TrxMessage.pb.cc.o  -o protoboost  /usr/lib64/libboost_system.a 

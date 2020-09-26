@@ -1,0 +1,32 @@
+{
+   format = "Ecere IDE Workspace File",
+   version = "0.1",
+   workspace = {
+      activeCompiler = "Default",
+      bitDepth = 0,
+      addedProjects = [
+         {
+            path = "colorSpheres.epj",
+            activeConfig = "Debug"
+         }
+      ],
+      openedFiles = [
+         {
+            path = "colorSpheres.ec",
+            state = opened,
+            lineNumber = 170,
+            position = 1,
+            scroll = {
+               0,
+               2196
+            },
+            modified = "Sun Sep  8 10:00:01 AM 2019"
+         }
+      ],
+      recentFiles = [
+         "/data/c/ec/spheretest/colorSpheres.ec"
+      ],
+      vgLeakCheck = summary,
+      vgRedzoneSize = -1
+   }
+}

@@ -1,0 +1,8 @@
+<map id="Query" name="Query">
+<area shape="rect" id="node1" title=" " alt="" coords="490,5,570,112"/>
+<area shape="rect" id="node2" href="$structComparisonBetweenSelectQuery.html" title=" " alt="" coords="5,175,241,296"/>
+<area shape="rect" id="node3" href="$structComparisonSelectQuery.html" title=" " alt="" coords="266,175,445,296"/>
+<area shape="rect" id="node4" href="$structDatabaseQuery.html" title=" " alt="" coords="469,167,591,303"/>
+<area shape="rect" id="node5" href="$structInsertReturnQuery.html" title=" " alt="" coords="615,167,757,303"/>
+<area shape="rect" id="node6" href="$structUpdateReturnQuery.html" title=" " alt="" coords="781,160,932,311"/>
+</map>

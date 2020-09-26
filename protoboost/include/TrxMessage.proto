@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package Trx;
+
+message Message {
+  required int32 type = 1;
+  optional string body = 2;
+}
+

@@ -1,0 +1,33 @@
+{
+   format = "Ecere IDE Workspace File",
+   version = "0.1",
+   workspace = {
+      activeCompiler = "Default",
+      bitDepth = 0,
+      addedProjects = [
+         {
+            path = "Test3D.epj",
+            activeConfig = "Debug"
+         }
+      ],
+      openedFiles = [
+         {
+            path = "Test3D.ec",
+            state = opened,
+            lineNumber = 82,
+            position = 24,
+            scroll = {
+               0,
+               864
+            },
+            modified = "Sun Sep  8 10:03:51 AM 2019"
+         }
+      ],
+      recentFiles = [
+         "/data/c/ec/test/Test3D.ec",
+         "/usr/share/ecere/samples/3D/Test3D/Test3D.ec"
+      ],
+      vgLeakCheck = summary,
+      vgRedzoneSize = -1
+   }
+}
