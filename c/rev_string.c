@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-void FirstReverse(char* str) {
+void reverse_string(char* str) {
   size_t length = strlen(str);
   char s_copy[length];
   strcpy(s_copy, str);
@@ -19,7 +19,7 @@ void FirstReverse(char* str) {
 }
 
 int main(void) {
-  FirstReverse("coderbyte");
+  reverse_string("myString");
   return 0;
 
 }
