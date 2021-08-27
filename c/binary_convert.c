@@ -23,8 +23,6 @@ void BinaryConverter(char* str) {
 }
 
 int main(void) {
-
-  // keep this function call here
   BinaryConverter("1111");
   return 0;
 

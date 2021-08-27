@@ -11,10 +11,8 @@ void Primes(int num) {
   printf("%s", result);
 }
 
-int main(void) {
-
-  // keep this function call here
+int main(void) 
+{
   Primes(37);
   return 0;
-
 }
