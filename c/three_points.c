@@ -53,10 +53,8 @@ void ThreePoints(char * strArr[], int arrLength) {
 }
 
 int main(void) {
-  // keep this function call here
   char * A[] = {"(0,-3)", "(-2,0)", "(0,0)"};
   int arrLength = sizeof(A) / sizeof(*A);
   ThreePoints(A, arrLength);
   return 0;
-
 }
