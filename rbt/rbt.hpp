@@ -1,4 +1,18 @@
 #include <vector>
+#include <stdexcept>
+#include <iostream>
+
+template <typename... T>
+void log(T... args)
+{
+  for (const auto& arg : {args...})
+    std::cout << arg;
+  std::cout << std::endl;
+}
+
+template <typename... Args>
+void log(Args... args);
+template void log(const char*);
 
 enum class Colour
 {

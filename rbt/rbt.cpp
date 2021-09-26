@@ -1,5 +1,6 @@
 #include "rbt.hpp"
 
+
 Node* RBT::Search(int value, Node* node)
 {
   node = (!node) ? m_root : node;
@@ -68,18 +69,18 @@ void  RBT::Restore(Node* node)
       Restore(node->parent->parent);
     }
     else
-    {
       RotateBlackUncle(node, is_left, parent_is_left);
-    }
   }
 }
 
 void SwapColour(Node* x, Node* y)
 {
-  const auto x_colour = x->colour;
-  const auto y_colour = y->colour;
-  x->colour           = y_colour;
-  y->colour           = x_colour;
+  const auto x_colour = (x) ? x->colour : Colour::black;
+  const auto y_colour = (y) ? y->colour : Colour::black;
+  if (x)
+    x->colour           = y_colour;
+  if (y)
+    y->colour           = x_colour;
 }
 
 void  RBT::RotateBlackUncle(Node* node, bool node_is_left, bool parent_is_left)
@@ -153,4 +154,66 @@ void RBT::RotateRight(Node* node)
 
   left->right  = node;
   node->parent = left;
+}
+
+static void DeleteNode(int value, Node* node)
+{
+  if (node)
+  {
+    if (node->value == value)
+    {
+      log("Delete this");
+    }
+    else
+      (node->value < value) ?
+      DeleteNode(value, node->right) :
+      DeleteNode(value, node->left);
+  }
+  else
+    throw std::invalid_argument{"Cannot delete non-extant value"};
+}
+
+void RBT::Delete(int value)
+{
+  DeleteNode(value, m_root);
+}
+
+void IncrementToDepth(int i, int& best, Node* n)
+{
+  if (n)
+  {
+    best = (i > best) ? i : best;
+    int j = i;
+    if (n->left)
+      IncrementToDepth(++i, best, n->left);
+    if (n->right)
+      IncrementToDepth(++j, best, n->right);
+  }
+}
+
+void PrintNode(Node* node, std::string spacing)
+{
+
+  if (node)
+  {
+    log(spacing, std::to_string(node->value), spacing);
+    std::string right_spacing = spacing + "      ";
+    spacing.pop_back(); spacing.pop_back(); spacing.pop_back(); spacing.pop_back(); spacing.pop_back();
+    spacing.pop_back(); spacing.pop_back(); spacing.pop_back(); spacing.pop_back(); spacing.pop_back();
+    PrintNode(node->left, spacing);
+    PrintNode(node->right, right_spacing);
+  }
+}
+
+void RBT::Print()
+{
+  int depth{};
+  if (m_root)
+    IncrementToDepth(1, depth, m_root);
+
+  std::string spacing{};
+  for (int i = 0; i < depth; i++)
+    spacing += "          ";
+
+  PrintNode(m_root, spacing);
 }
