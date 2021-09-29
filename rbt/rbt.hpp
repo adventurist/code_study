@@ -53,6 +53,9 @@ void  Restore(Node* node);
 void  RotateBlackUncle(Node* node, bool node_is_left, bool parent_is_left);
 void  RotateLeft (Node* node);
 void  RotateRight(Node* node);
+void  DeleteNode(int value, Node* node);
+void  PerformDelete(Node* node);
+void  DeleteDoubleBlack(Node* node);
 
 Node* m_root;
 };

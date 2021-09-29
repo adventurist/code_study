@@ -83,7 +83,7 @@ void SwapColour(Node* x, Node* y)
     y->colour           = x_colour;
 }
 
-void  RBT::RotateBlackUncle(Node* node, bool node_is_left, bool parent_is_left)
+void RBT::RotateBlackUncle(Node* node, bool node_is_left, bool parent_is_left)
 {
   Node*      parent          = node->parent;
   const bool parent_is_right = !(parent_is_left);
@@ -156,23 +156,92 @@ void RBT::RotateRight(Node* node)
   node->parent = left;
 }
 
-static void DeleteNode(int value, Node* node)
+bool HasRedChild(Node* node)
 {
-  if (node)
+  return (node) ?
+    ((node->left  && node->left->colour  == Colour::red) ||
+      (node->right && node->right->colour == Colour::red)) :
+    false;
+}
+
+Node* GetRedChild(Node* node)
+{
+  return (node) ?
+    (node->left && node->left->colour == Colour::red) ?
+      node->left :
+    (node->right && node->right->colour == Colour::red) ?
+      node->right :
+      nullptr :
+    nullptr;
+}
+
+void RBT::DeleteDoubleBlack(Node* node)
+{
+  // If sibling is black and sibling has a red child
+  bool is_left = (node->parent->left == node);
+  bool is_right = !is_left;
+  bool s_is_left = !is_left;
+  bool s_is_right = is_left;
+  Node* sibling = (s_is_right) ? node->parent->right : node->parent->left;
+  Node* r       = GetRedChild(sibling);
+  bool has_r_child = (r);
+  if (sibling->colour == Colour::black && has_r_child)
   {
-    if (node->value == value)
+    if (s_is_left && r == sibling->left)   // Left Left
+      RotateRight(sibling);
+    else
+    if (s_is_left && r == sibling->right)  // left right
     {
-      log("Delete this");
+      RotateLeft (sibling);
+      RotateRight(r);
     }
     else
-      (node->value < value) ?
-      DeleteNode(value, node->right) :
-      DeleteNode(value, node->left);
+    if (s_is_right && r == sibling->right) // Right Right
+      RotateLeft(sibling);
+    else                                   // Right Left
+    {
+      RotateRight(sibling);
+      RotateLeft (r);
+    }
   }
+}
+
+static void PerformDelete(Node* node)
+{ // Assume only one child
+  Node* u = node;
+  Node* v = (node->left) ? node->left : node->right;
+
+  bool double_black = (u->colour == Colour::black && v->colour == Colour::black);
+
+  if (!double_black) // Simple case
+  {
+    Node* parent = u->parent;
+    v->colour == Colour::black;
+    (node == parent->left) ? parent->left = v : parent->right = v;
+  }
+  else
+  {
+    DeleteDoubleBlack(node);
+  }
+}
+
+void RBT::DeleteNode(int value, Node* node)
+{
+  if (node)
+    if (node->value == value)
+      PerformDelete(node);
+    else
+      (node->value < value) ?
+      DeleteNode(value, node->right) : DeleteNode(value, node->left);
   else
     throw std::invalid_argument{"Cannot delete non-extant value"};
 }
 
+/**
+ * Delete
+ *
+ * 1.
+ */
 void RBT::Delete(int value)
 {
   DeleteNode(value, m_root);
