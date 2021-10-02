@@ -3,9 +3,9 @@
 /**
  * Search
  *
- * @param   [in]  {int}     The value being sought
- * @param   [in]  {Node*}   The node being evaluated
- * @returns [out] {Node*}   The node that was matched
+ * @param   [in]  {int}
+ * @param   [in]  {Node*} Cursor position
+ * @returns [out] {Node*}
  */
 Node* RBT::Search(int value, Node* node)
 {
@@ -23,7 +23,7 @@ Node* RBT::Search(int value, Node* node)
 /**
  * Insert
  *
- * @param  [in] {int}
+ * @param  [in] {int} value
  */
 void RBT::Insert(int value)
 {
@@ -57,9 +57,9 @@ void RBT::Insert(int value)
 /**
  * Restore
  *
- * Corrections violations after an insertion
+ * Corrects violations after insertion
  *
- * @param [in] {Node*} The freshly inserted node
+ * @param [in] {Node*} Freshly inserted node
  */
 void  RBT::Restore(Node* node)
 {
@@ -91,8 +91,8 @@ void  RBT::Restore(Node* node)
  *
  * Helper function to swap the colour of two nodes
  *
- * @param [in] {Node*}
- * @param [in] {Node*}
+ * @param [in] {Node*} x
+ * @param [in] {Node*} y
  */
 static void SwapColour(Node* x, Node* y)
 {
@@ -110,7 +110,7 @@ static void SwapColour(Node* x, Node* y)
  * Helper method to fix violations present when a freshly inserted node has a
  * red parent and a black uncle
  *
- * @param [in] {Node*}  node Inserted
+ * @param [in] {Node*}  node
  * @param [in] {bool}   node_is_left
  * @param [in] {bool}   parent_is_left
  */
