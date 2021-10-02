@@ -16,8 +16,8 @@ template void log(const char*);
 
 enum class Colour
 {
-  red,
-  black
+  red   = 0x00,
+  black = 0x01
 };
 
 struct Node
@@ -38,9 +38,8 @@ RBT()
   ┌───────────────────────────────────────────┐
   │░░░░░░░░░░░░░░Public Interface░░░░░░░░░░░░░░│
   └───────────────────────────────────────────┘*/
-void  Insert(int value);
 Node* Search(int value, Node* node = nullptr);
-
+void  Insert(int value);
 void  Delete(int value);
 void  Print ();
 
@@ -49,13 +48,13 @@ private:
   ┌───────────────────────────────────────────┐
   │░░░░░░░░░░░░░░PrivateInterface░░░░░░░░░░░░░░│
   └───────────────────────────────────────────┘*/
-void  Restore(Node* node);
+void  Restore         (Node* node);
 void  RotateBlackUncle(Node* node, bool node_is_left, bool parent_is_left);
-void  RotateLeft (Node* node);
-void  RotateRight(Node* node);
-void  DeleteNode(int value, Node* node);
-void  PerformDelete(Node* node);
-void  FixDoubleBlack(Node* s, bool is_left);
+void  RotateLeft      (Node* node);
+void  RotateRight     (Node* node);
+void  DeleteNode      (int value, Node* node);
+void  PerformDelete   (Node* node);
+void  FixDoubleBlack  (Node* s, bool is_left);
 
 Node* m_root;
 };
