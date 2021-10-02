@@ -1,6 +1,12 @@
 #include "rbt.hpp"
 
-
+/**
+ * Search
+ *
+ * @param   [in]  {int}     The value being sought
+ * @param   [in]  {Node*}   The node being evaluated
+ * @returns [out] {Node*}   The node that was matched
+ */
 Node* RBT::Search(int value, Node* node)
 {
   node = (!node) ? m_root : node;
@@ -14,6 +20,11 @@ Node* RBT::Search(int value, Node* node)
     return Search(value, node->right);
 }
 
+/**
+ * Insert
+ *
+ * @param  [in] {int}
+ */
 void RBT::Insert(int value)
 {
   if (!m_root)
@@ -28,8 +39,7 @@ void RBT::Insert(int value)
       if (!node->left)
       {
         node->left = new Node{.value = value, .parent = node};
-        Restore(node->left);
-        return;
+        return Restore(node->left);
       }
       else
         node = node->left;
@@ -37,21 +47,24 @@ void RBT::Insert(int value)
       if (!node->right)
       {
         node->right = new Node{.value = value, .parent = node};
-        Restore(node->right);
-        return;
+        return Restore(node->right);
       }
       else
         node = node->right;
   }
 }
 
+/**
+ * Restore
+ *
+ * Corrections violations after an insertion
+ *
+ * @param [in] {Node*} The freshly inserted node
+ */
 void  RBT::Restore(Node* node)
 {
   if (node == m_root)
-  {
-    node->colour = Colour::black;
-    return;
-  }
+    return (void)(node->colour = Colour::black);
 
   const bool is_left = (node == node->parent->left);
 
@@ -73,7 +86,15 @@ void  RBT::Restore(Node* node)
   }
 }
 
-void SwapColour(Node* x, Node* y)
+/**
+ * SwapColour
+ *
+ * Helper function to swap the colour of two nodes
+ *
+ * @param [in] {Node*}
+ * @param [in] {Node*}
+ */
+static void SwapColour(Node* x, Node* y)
 {
   const auto x_colour = (x) ? x->colour : Colour::black;
   const auto y_colour = (y) ? y->colour : Colour::black;
@@ -83,6 +104,16 @@ void SwapColour(Node* x, Node* y)
     y->colour           = x_colour;
 }
 
+/**
+ * RotateBlackUncle
+ *
+ * Helper method to fix violations present when a freshly inserted node has a
+ * red parent and a black uncle
+ *
+ * @param [in] {Node*}  node Inserted
+ * @param [in] {bool}   node_is_left
+ * @param [in] {bool}   parent_is_left
+ */
 void RBT::RotateBlackUncle(Node* node, bool node_is_left, bool parent_is_left)
 {
   Node*      parent          = node->parent;
@@ -114,6 +145,11 @@ void RBT::RotateBlackUncle(Node* node, bool node_is_left, bool parent_is_left)
   }
 }
 
+/**
+ * RotateLeft
+ *
+ * @param [in] {Node*} node
+ */
 void RBT::RotateLeft(Node* node)
 {
   auto right    = node->right;
@@ -135,6 +171,11 @@ void RBT::RotateLeft(Node* node)
   node->parent  = right;
 }
 
+/**
+ * RotateRight
+ *
+ * @param [in] {Node*} node
+ */
 void RBT::RotateRight(Node* node)
 {
   auto left    = node->left;
@@ -156,25 +197,48 @@ void RBT::RotateRight(Node* node)
   node->parent = left;
 }
 
-bool HasRedChild(Node* node)
+/**
+ * HasRedChild
+ *
+ * @param   [in]  {Node*} node
+ * @returns [out] {bool}
+ */
+static bool HasRedChild(Node* node)
 {
   return (node) ?
     ((node->left  && node->left->colour  == Colour::red) ||
-      (node->right && node->right->colour == Colour::red)) :
+     (node->right && node->right->colour == Colour::red))   :
     false;
 }
 
-Node* GetRedChild(Node* node)
+/**
+ * GetRedChild
+ *
+ * Helper function returns the node's red child, if it has one, and the left child
+ * if it has two.
+ *
+ * @param   [in]  {Node*} node
+ * @returns [out] {Node*}
+ */
+static Node* GetRedChild(Node* node)
 {
   return (node) ?
     (node->left && node->left->colour == Colour::red) ?
       node->left :
-    (node->right && node->right->colour == Colour::red) ?
-      node->right :
-      nullptr :
-    nullptr;
+      (node->right && node->right->colour == Colour::red) ?
+        node->right :
+        nullptr :
+      nullptr;
 }
 
+/**
+ * FixDoubleBlack
+ *
+ * Helper method to fix violations present after a node has been marked DoubleBlack
+ *
+ * @param [in] {Node*}
+ * @param [in] {bool}
+ */
 void RBT::FixDoubleBlack(Node* s, bool is_left)
 {
   Node* r        = GetRedChild(s);
@@ -196,7 +260,7 @@ void RBT::FixDoubleBlack(Node* s, bool is_left)
     else
     if (is_right && right_c) // Right Right
       RotateLeft(s);
-    else                    // Right Left
+    else                     // Right Left
     {
       RotateRight(s);
       RotateLeft (r);
@@ -219,6 +283,13 @@ void RBT::FixDoubleBlack(Node* s, bool is_left)
   }
 }
 
+/**
+ * PerformDelete
+ *
+ * Helper method to delete a node and deduce if corrections must be made
+ *
+ * @param [in] {Node*}
+ */
 void RBT::PerformDelete(Node* node)
 { // Assume only one child
   Node* u      = node;
@@ -233,7 +304,7 @@ void RBT::PerformDelete(Node* node)
     v->colour    = Colour::black;
 
     if (left_c)
-      parent->left = v;
+      parent->left  = v;
     else
       parent->right = v;
 
@@ -244,7 +315,7 @@ void RBT::PerformDelete(Node* node)
     Node* s = (left_c) ? node->parent->right : node->parent->left;
 
     if (left_c)
-      node->parent->left = nullptr;
+      node->parent->left  = nullptr;
     else
       node->parent->right = nullptr;
 
@@ -253,6 +324,12 @@ void RBT::PerformDelete(Node* node)
   }
 }
 
+/**
+ * DeleteNode
+ *
+ * @param {int}   value
+ * @param {Node*} node The node being inspected, which defaults to root
+ */
 void RBT::DeleteNode(int value, Node* node)
 {
   if (node)
@@ -260,7 +337,8 @@ void RBT::DeleteNode(int value, Node* node)
       PerformDelete(node);
     else
       (node->value < value) ?
-      DeleteNode(value, node->right) : DeleteNode(value, node->left);
+        DeleteNode(value, node->right) :
+        DeleteNode(value, node->left);
   else
     throw std::invalid_argument{"Cannot delete non-extant value"};
 }
@@ -268,18 +346,27 @@ void RBT::DeleteNode(int value, Node* node)
 /**
  * Delete
  *
- * 1.
+ * @param [in] {int} value
  */
 void RBT::Delete(int value)
 {
   DeleteNode(value, m_root);
 }
 
+/**
+ * IncrementToDepth
+ *
+ * Helper function to measure the depth of a node
+ *
+ * @param [in]     {int}   i     The current depth
+ * @param [in/out] {int&}  depth A reference to variable where the final depth will be stored
+ * @param [in]     {Node*} n     The node currently being measured
+ */
 void IncrementToDepth(int i, int& best, Node* n)
 {
   if (n)
   {
-    best = (i > best) ? i : best;
+    best  = (i > best) ? i : best;
     int j = i;
     if (n->left)
       IncrementToDepth(++i, best, n->left);
@@ -288,6 +375,12 @@ void IncrementToDepth(int i, int& best, Node* n)
   }
 }
 
+/**
+ * PrintNode
+ *
+ * @param [in] {Node*}       node
+ * @param [in] {std::string} spacing
+ */
 void PrintNode(Node* node, std::string spacing)
 {
 
@@ -302,6 +395,9 @@ void PrintNode(Node* node, std::string spacing)
   }
 }
 
+/**
+ * Print
+ */
 void RBT::Print()
 {
   int depth{};
