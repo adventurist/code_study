@@ -175,53 +175,81 @@ Node* GetRedChild(Node* node)
     nullptr;
 }
 
-void RBT::DeleteDoubleBlack(Node* node)
+void RBT::FixDoubleBlack(Node* s, bool is_left)
 {
-  // If sibling is black and sibling has a red child
-  bool is_left = (node->parent->left == node);
-  bool is_right = !is_left;
-  bool s_is_left = !is_left;
-  bool s_is_right = is_left;
-  Node* sibling = (s_is_right) ? node->parent->right : node->parent->left;
-  Node* r       = GetRedChild(sibling);
-  bool has_r_child = (r);
-  if (sibling->colour == Colour::black && has_r_child)
+  Node* r        = GetRedChild(s);
+  bool  left_c   = (r == s->left);
+  bool  right_c  = !(left_c);
+  bool  is_right = !(is_left);
+  bool  black_s  = (s) ? s->colour == Colour::black : true;
+
+  if (s && r && black_s)
   {
-    if (s_is_left && r == sibling->left)   // Left Left
-      RotateRight(sibling);
+    if (is_left && left_c)   // Left Left
+      RotateRight(s);
     else
-    if (s_is_left && r == sibling->right)  // left right
+    if (is_left && right_c)  // left right
     {
-      RotateLeft (sibling);
+      RotateLeft (s);
       RotateRight(r);
     }
     else
-    if (s_is_right && r == sibling->right) // Right Right
-      RotateLeft(sibling);
-    else                                   // Right Left
+    if (is_right && right_c) // Right Right
+      RotateLeft(s);
+    else                    // Right Left
     {
-      RotateRight(sibling);
+      RotateRight(s);
       RotateLeft (r);
     }
   }
+  else
+  if (!(r) && black_s)      // Two black children
+  {
+    s->colour = Colour::red;
+    if (s->parent != m_root && s->parent->colour == Colour::black)
+      FixDoubleBlack(s->parent, (s->parent == s->parent->parent->left));
+  }
+  else
+  if (!(black_s))          // Red sibling
+  {
+    if (is_left)
+      RotateRight(s->parent);
+    else
+      RotateLeft(s->parent);
+  }
 }
 
-static void PerformDelete(Node* node)
+void RBT::PerformDelete(Node* node)
 { // Assume only one child
-  Node* u = node;
-  Node* v = (node->left) ? node->left : node->right;
+  Node* u      = node;
+  Node* v      = (node->left) ? node->left : node->right;
+  bool  left_c = (node == node->parent->left);
 
-  bool double_black = (u->colour == Colour::black && v->colour == Colour::black);
+  bool double_black = (u->colour == Colour::black && (v) ? v->colour == Colour::black : true);
 
   if (!double_black) // Simple case
   {
     Node* parent = u->parent;
-    v->colour == Colour::black;
-    (node == parent->left) ? parent->left = v : parent->right = v;
+    v->colour    = Colour::black;
+
+    if (left_c)
+      parent->left = v;
+    else
+      parent->right = v;
+
+    delete node;
   }
   else
   {
-    DeleteDoubleBlack(node);
+    Node* s = (left_c) ? node->parent->right : node->parent->left;
+
+    if (left_c)
+      node->parent->left = nullptr;
+    else
+      node->parent->right = nullptr;
+
+    delete node;
+    FixDoubleBlack(s, !(left_c));
   }
 }
 

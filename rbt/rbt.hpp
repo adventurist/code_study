@@ -55,7 +55,7 @@ void  RotateLeft (Node* node);
 void  RotateRight(Node* node);
 void  DeleteNode(int value, Node* node);
 void  PerformDelete(Node* node);
-void  DeleteDoubleBlack(Node* node);
+void  FixDoubleBlack(Node* s, bool is_left);
 
 Node* m_root;
 };

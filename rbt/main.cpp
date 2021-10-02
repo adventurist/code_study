@@ -31,9 +31,15 @@ int main(int argc, char* argv[])
     tree.Insert(41);
     tree.Insert(61);
     tree.Insert(4);
-
-
     tree.Print();
+
+    wait();
+
+    tree.Delete(92);
+    tree.Delete(17);
+    tree.Print();
+    wait();
+    tree.Delete(1000);
   }
   catch (const std::exception& e)
   {
