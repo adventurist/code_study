@@ -249,18 +249,18 @@ void RBT::FixDoubleBlack(Node* s, bool is_left)
 
   if (s && r && black_s)
   {
-    if (is_left && left_c)   // Left Left
+    if (is_left && left_c)   // LEFT LEFT
       RotateRight(s);
     else
-    if (is_left && right_c)  // left right
+    if (is_left && right_c)  // LEFT RIGHT
     {
       RotateLeft (s);
       RotateRight(r);
     }
     else
-    if (is_right && right_c) // Right Right
+    if (is_right && right_c) // RIGHT RIGHT
       RotateLeft(s);
-    else                     // Right Left
+    else                     // RIGHT LEFT
     {
       RotateRight(s);
       RotateLeft (r);
