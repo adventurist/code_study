@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+args="-229652245"
+urls="https://pbs.twimg.com/media/FB2joF0XoAMwdT4.jpg>"
+content="@R8xUltras
+RT @R8xUltras: #NewProfilePic
+#NewHeader
+💙حلّة جديدة https://t.co/yhNTWJJHSG
+#NewProfilePic#NewHeader
+Posted:   Sat Oct 16 22:00:13 +0000 2021
+Likes:    0
+Retweets: 11"
+

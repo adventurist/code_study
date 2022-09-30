@@ -1,57 +1,21 @@
-#include <cassert>
 #include <iostream>
 #include <type_traits>
-#include <functional>
 
-struct foo {
-  template <typename F>
-  foo(F f) {
-    assert(42 == f(42));
-  }
-};
+static const int A = 1;
+static const int B = 2;
 
-class A {
-  public:
-    template <typename T>
-    T run(T t, size_t size) {
-      return t;
-    }
-};
-
-
-template<typename>
-struct S;
-
-template<typename R, typename... Args>
-struct S<R(*)(Args...)> {
-    template <typename F>
-    static auto runFunc(F func) -> foo
-    {
-        return foo{[func](Args... args) -> R
-            {
-                // Do something before calling func
-                auto r = func(args...);
-                // Do something after call func
-                return r;
-            }};
-    }
-};
-
-template <typename F>
-inline auto runFunc(F func) -> foo {
-  return S<F>::runFunc();
+template <int DV>
+void run()
+{
+  if constexpr (DV == A)
+    std::cout << "A" << std::endl;
+  else
+  if constexpr (DV == B)
+    std::cout << "B" << std::endl;
 }
 
-int main() {
-  A a{};
-
-  std::function<auto(size_t)>
-  a.run(12, 13);
-
-  auto r = runFunc([&a]() {
-    a.run(12, 13);
-  });
-  std::cout << "Hi" << std::endl;
-
+int main(int argc, char* argv[])
+{
+  run<A>();
   return 0;
 }
