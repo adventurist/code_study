@@ -4,9 +4,11 @@
 #include <mutex>
 #include <condition_variable>
 
+//--------------utils----------------------------------------------------
 template<typename ...Args>
 void log(Args... args) { for (auto arg : { args... }) std::cout << arg; std::cout << std::endl; };
 auto sleep = [] { std::this_thread::sleep_for(std::chrono::seconds(1)); };
+//-----------------------------------------------------------------------
 class application
 {
 private:
@@ -22,6 +24,19 @@ private:
   bool                    handled = false;
   bool                    waiting = false;
 
+  //--------------------------------------
+  void f1(std::promise<void>&& p) // work function 1
+  {
+    log("f1()          ::thread 1");
+    t2 = std::thread{[this] (auto&& p) { wait_promise(std::move(p)); } , std::move(p)};
+
+    {
+      log("f1()          ::thread 2    => setting f1 done");
+      std::unique_lock lock{m};
+      f1_done = true;
+    }
+    cv.notify_one();
+  }
   //--------------------------------------
   void f2(std::promise<void>&& p) // work function 2
   {
@@ -39,19 +54,6 @@ private:
         p.set_value();
       }
     }, std::move(p)};
-  }
-  //--------------------------------------
-  void f1(std::promise<void>&& p) // work function 1
-  {
-    log("f1()          ::thread 1");
-    t2 = std::thread{[this] (auto&& p) { wait_promise(std::move(p)); } , std::move(p)};
-
-    {
-      log("f1()          ::thread 2    => setting f1 done");
-      std::unique_lock lock{m};
-      f1_done = true;
-    }
-    cv.notify_one();
   }
   //--------------------------------------
   void wait_promise(std::promise<void>&& p)
